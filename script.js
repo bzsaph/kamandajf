@@ -7,7 +7,7 @@ const CONFIG = {
     whatsappNumber: '+250788351489',  // ← CHANGE THIS (include country code, no + or spaces)
     phone: '+ (250) 788-351489',    // Your display phone number
     email: 'jfsmart.logisticsltd@gmail.com/info@jfsmartlogistics.com',  // Your email
-    address: '123 Logistics Avenue, Business District'  // Your address
+    address: 'Charity House, Ground Floor Opps Ste Famille Church'  // Your address
 };
 
 // === Initialize Everything ===
