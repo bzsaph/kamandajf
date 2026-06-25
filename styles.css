@@ -681,6 +681,9 @@ img {
     position: relative;
     overflow: hidden;
 }
+/* Ensure headings/text stay readable on the dark "Why Us" section */
+.benefits-section .section-title { color: var(--white); }
+.benefits-section .section-description { color: rgba(255, 255, 255, 0.75); }
 
 .benefits-section::before {
     content: '';
