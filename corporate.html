@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="J&F Smart Logistics Ltd — enterprise mobility, travel & tourism solutions. Airport transfers, executive chauffeur, corporate transport, tours and holiday packages across Rwanda & East Africa.">
+<title>J&F Smart Logistics — Enterprise Mobility, Travel & Tourism</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- Shared brand styles -->
+<link rel="stylesheet" href="styles.css">
+
+<style>
+:root{
+  --primary:#0066FF; --primary-2:#00A8FF; --secondary:#FF6B35;
+  --dark:#0F172A; --dark-2:#13294B; --gray:#64748B; --light:#F8FAFC;
+  --grad-primary:linear-gradient(135deg,#0066FF 0%,#00A8FF 100%);
+  --grad-dark:linear-gradient(150deg,#0F172A 0%,#13294B 60%,#0A1A33 100%);
+  --ff:'Plus Jakarta Sans',sans-serif; --fd:'Urbanist',sans-serif;
+}
+body{font-family:var(--ff);color:#334155;background:#fff;}
+.fd{font-family:var(--fd);}
+.text-grad{background:var(--grad-primary);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+a{text-decoration:none;}
+.sec{padding:4rem 0;}
+.eyebrow{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--primary);background:#eaf2ff;padding:.45rem 1rem;border-radius:30px;}
+.h-sec{font-family:var(--fd);font-weight:800;font-size:2.2rem;line-height:1.12;color:var(--dark);letter-spacing:-.01em;}
+.lead-sec{color:var(--gray);font-size:1.02rem;max-width:680px;}
+
+/* ===== Top utility bar ===== */
+.topbar{background:var(--dark);color:#cbd5e1;font-size:.82rem;}
+.topbar a{color:#cbd5e1;transition:.2s;}
+.topbar a:hover{color:#fff;}
+.topbar .sep{opacity:.3;margin:0 .35rem;}
+.topbar .tb-social a{margin-left:.7rem;font-size:.95rem;}
+
+/* ===== Header ===== */
+.corp-header{position:sticky;top:0;z-index:1030;background:#fff;box-shadow:0 4px 24px rgba(15,23,42,.07);}
+.corp-header .navbar-brand img{height:48px;width:auto;}
+.corp-nav .nav-link{font-weight:600;color:#1e293b !important;padding:.5rem .9rem !important;font-size:.95rem;border-radius:8px;}
+.corp-nav .nav-link:hover{color:var(--primary) !important;background:#f1f5fb;}
+.btn-grad{background:var(--grad-primary);color:#fff !important;font-weight:700;border:none;padding:.65rem 1.4rem;border-radius:10px;box-shadow:0 8px 20px -6px rgba(0,102,255,.5);transition:.2s;}
+.btn-grad:hover{transform:translateY(-2px);box-shadow:0 12px 26px -6px rgba(0,102,255,.6);color:#fff;}
+.btn-ghost{border:2px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:.6rem 1.3rem;border-radius:10px;transition:.2s;}
+.btn-ghost:hover{background:#fff;color:var(--primary) !important;}
+.dropdown-menu{border:none;box-shadow:0 18px 50px -12px rgba(15,23,42,.25);border-radius:14px;padding:.6rem;}
+.dropdown-item{border-radius:8px;font-weight:600;font-size:.9rem;padding:.55rem .8rem;color:#334155;}
+.dropdown-item:hover{background:#f1f5fb;color:var(--primary);}
+.dropdown-item i{color:var(--primary);width:20px;}
+
+/* ===== Hero ===== */
+.hero{position:relative;color:#fff;overflow:hidden;
+  background:linear-gradient(150deg,rgba(15,23,42,.92) 0%,rgba(19,41,75,.86) 55%,rgba(0,102,255,.55) 100%),
+             url('images/demo-hero.jpg') center/cover no-repeat;}
+.hero-section-bg{}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:.5rem 1rem;border-radius:30px;font-size:.82rem;font-weight:600;}
+.hero h1{font-family:var(--fd);font-weight:800;font-size:3.1rem;line-height:1.08;letter-spacing:-.02em;}
+.hero p.sub{color:#dbe5f5;font-size:1.1rem;max-width:560px;}
+.hero-stats .num{font-family:var(--fd);font-weight:800;font-size:1.8rem;color:#fff;}
+.hero-stats .lbl{font-size:.78rem;color:#9fb2cf;text-transform:uppercase;letter-spacing:.08em;}
+
+/* Booking widget */
+.booking{background:#fff;border-radius:20px;box-shadow:0 30px 60px -20px rgba(0,0,0,.5);padding:1.4rem;color:#334155;}
+.booking .tabs{display:flex;gap:.4rem;margin-bottom:1rem;flex-wrap:wrap;}
+.booking .tab{flex:1;min-width:90px;text-align:center;font-size:.8rem;font-weight:700;padding:.6rem .4rem;border-radius:10px;background:#f1f5fb;color:#475569;cursor:pointer;transition:.2s;}
+.booking .tab.active{background:var(--grad-primary);color:#fff;box-shadow:0 8px 18px -6px rgba(0,102,255,.5);}
+.booking .fld{margin-bottom:.7rem;}
+.booking label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray);margin-bottom:.2rem;display:block;}
+.booking .ip{width:100%;border:1.5px solid #e2e8f0;border-radius:10px;padding:.6rem .8rem;font-size:.9rem;font-family:var(--ff);}
+.booking .ip:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(0,102,255,.12);}
+
+/* ===== Service quick tiles ===== */
+.qtile{display:flex;align-items:center;gap:.9rem;background:#fff;border:1px solid #eef0f4;border-radius:16px;padding:1rem 1.1rem;height:100%;transition:.25s;}
+.qtile:hover{transform:translateY(-5px);box-shadow:0 18px 36px -14px rgba(15,23,42,.25);border-color:transparent;}
+.qtile .ic{width:48px;height:48px;border-radius:12px;background:#eaf2ff;color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;}
+.qtile h6{margin:0;font-weight:800;font-family:var(--fd);color:var(--dark);font-size:1rem;}
+.qtile small{color:var(--gray);}
+
+/* ===== Stats band ===== */
+.stats-band{background:var(--grad-dark);color:#fff;}
+.stat-c .num{font-family:var(--fd);font-weight:900;font-size:2.6rem;background:var(--grad-primary);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+.stat-c .lbl{color:#9fb2cf;font-weight:600;letter-spacing:.04em;}
+
+/* ===== Solution cards ===== */
+.sol-card{background:#fff;border:1px solid #eef0f4;border-radius:20px;overflow:hidden;height:100%;transition:.25s;}
+.sol-card:hover{transform:translateY(-6px);box-shadow:0 24px 50px -18px rgba(15,23,42,.28);border-color:transparent;}
+.sol-card .top{height:96px;background:var(--grad-primary);position:relative;display:flex;align-items:center;justify-content:center;}
+.sol-card .top.alt{background:linear-gradient(135deg,#FF6B35,#FF9B6B);}
+.sol-card .top i{font-size:2.3rem;color:#fff;}
+.sol-card .bd{padding:1.3rem;}
+.sol-card h5{font-family:var(--fd);font-weight:800;color:var(--dark);font-size:1.1rem;}
+.sol-card p{color:var(--gray);font-size:.9rem;margin-bottom:.7rem;}
+.sol-card .lnk{font-weight:700;color:var(--primary);font-size:.85rem;}
+
+/* ===== Industries ===== */
+.ind{position:relative;border-radius:18px;overflow:hidden;height:170px;display:flex;align-items:flex-end;color:#fff;}
+.ind .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,23,42,.1),rgba(15,23,42,.85));}
+.ind .ct{position:relative;padding:1.1rem;z-index:2;}
+.ind .ct i{font-size:1.5rem;}
+.ind .ct h6{font-family:var(--fd);font-weight:800;margin:.3rem 0 0;}
+
+/* ===== Fleet ===== */
+.fleet-card{background:#fff;border:1px solid #eef0f4;border-radius:18px;padding:1.5rem;text-align:center;height:100%;transition:.25s;}
+.fleet-card:hover{transform:translateY(-6px);box-shadow:0 22px 44px -18px rgba(15,23,42,.25);border-color:transparent;}
+.fleet-card .ic{width:84px;height:84px;border-radius:50%;margin:0 auto 1rem;background:#eaf2ff;color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:2.2rem;}
+.fleet-card h6{font-family:var(--fd);font-weight:800;color:var(--dark);}
+.fleet-card .cap{font-size:.8rem;color:var(--gray);}
+
+/* ===== Process ===== */
+.step{text-align:center;position:relative;}
+.step .n{width:64px;height:64px;border-radius:50%;margin:0 auto 1rem;background:var(--grad-primary);color:#fff;font-family:var(--fd);font-weight:800;font-size:1.5rem;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 26px -8px rgba(0,102,255,.5);}
+.step h6{font-family:var(--fd);font-weight:800;color:var(--dark);}
+.step p{font-size:.88rem;color:var(--gray);}
+
+/* ===== Presence ===== */
+.presence{background:var(--grad-dark);color:#fff;border-radius:24px;overflow:hidden;}
+.dest-chip{display:inline-block;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#dbe5f5;padding:.4rem .9rem;border-radius:20px;font-size:.82rem;font-weight:600;margin:.25rem;}
+
+/* ===== Insights ===== */
+.post{background:#fff;border:1px solid #eef0f4;border-radius:18px;overflow:hidden;height:100%;transition:.25s;}
+.post:hover{transform:translateY(-6px);box-shadow:0 22px 44px -18px rgba(15,23,42,.25);border-color:transparent;}
+.post .ph{height:150px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:2.4rem;}
+.post .bd{padding:1.2rem;}
+.post .tag{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--secondary);}
+.post h6{font-family:var(--fd);font-weight:800;color:var(--dark);font-size:1.05rem;margin:.4rem 0;}
+.post p{font-size:.86rem;color:var(--gray);}
+
+/* ===== Testimonials ===== */
+.quote{background:#fff;border:1px solid #eef0f4;border-radius:18px;padding:1.6rem;height:100%;}
+.quote .stars{color:#FFB400;}
+.quote p{color:#475569;font-style:italic;}
+.quote .who{display:flex;align-items:center;gap:.7rem;margin-top:1rem;}
+.quote .av{width:44px;height:44px;border-radius:50%;background:var(--grad-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-family:var(--fd);}
+
+/* ===== Partners ===== */
+.partner{height:64px;border:1px solid #eef0f4;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#94a3b8;font-weight:800;font-family:var(--fd);font-size:1rem;}
+
+/* ===== CTA ===== */
+.cta{background:linear-gradient(120deg,rgba(0,102,255,.93),rgba(0,168,255,.82)),url('images/demo-cta.jpg') center/cover;color:#fff;border-radius:26px;overflow:hidden;position:relative;}
+.cta::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;right:-80px;top:-120px;background:rgba(255,255,255,.12);}
+
+/* ===== Footer ===== */
+.mega-foot{background:#0B1525;color:#9fb2cf;}
+.mega-foot h6{color:#fff;font-family:var(--fd);font-weight:800;letter-spacing:.02em;margin-bottom:1.1rem;}
+.mega-foot a{color:#9fb2cf;font-size:.9rem;display:inline-block;padding:.2rem 0;transition:.2s;}
+.mega-foot a:hover{color:#fff;}
+.mega-foot .flogo{height:56px;background:#fff;border-radius:12px;padding:6px 8px;}
+.foot-soc a{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.08);display:inline-flex;align-items:center;justify-content:center;margin-right:.4rem;color:#cbd5e1;}
+.foot-soc a:hover{background:var(--grad-primary);color:#fff;}
+.news-ip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;border-radius:10px;padding:.6rem .9rem;width:100%;}
+.news-ip::placeholder{color:#7c8aa3;}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.08);font-size:.85rem;}
+
+@media (max-width:991px){ .hero h1{font-size:2.3rem;} .h-sec{font-size:1.8rem;} .sec{padding:3rem 0;} }
+</style>
+</head>
+<body>
+
+<!-- ===== Top utility bar ===== -->
+<div class="topbar d-none d-lg-block">
+  <div class="container d-flex justify-content-between align-items-center py-2">
+    <div>
+      <a href="tel:+250788351489"><i class="bi bi-telephone-fill me-1"></i> +250 788 351 489</a>
+      <span class="sep">|</span>
+      <a href="mailto:info@jfsmartlogistics.com"><i class="bi bi-envelope-fill me-1"></i> info@jfsmartlogistics.com</a>
+      <span class="sep">|</span>
+      <a href="#"><i class="bi bi-geo-alt-fill me-1"></i> Charity House, Kigali</a>
+    </div>
+    <div class="d-flex align-items-center">
+      <a href="#contact"><i class="bi bi-search me-1"></i> Track Booking</a>
+      <span class="sep">|</span>
+      <a href="#"><i class="bi bi-translate me-1"></i> EN</a>
+      <span class="tb-social">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="https://wa.me/250788351489"><i class="bi bi-whatsapp"></i></a>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="corp-header">
+  <nav class="navbar navbar-expand-lg corp-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="J&F Smart Logistics Ltd"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cnav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="cnav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown">Solutions</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#solutions"><i class="bi bi-airplane-fill"></i> Airport Transfers</a></li>
+              <li><a class="dropdown-item" href="#solutions"><i class="bi bi-car-front-fill"></i> Executive Chauffeur</a></li>
+              <li><a class="dropdown-item" href="#solutions"><i class="bi bi-buildings-fill"></i> Corporate Transport</a></li>
+              <li><a class="dropdown-item" href="#solutions"><i class="bi bi-gem"></i> VIP Transportation</a></li>
+              <li><a class="dropdown-item" href="#solutions"><i class="bi bi-globe-americas"></i> Tours & Tourism</a></li>
+              <li><a class="dropdown-item" href="#solutions"><i class="bi bi-umbrella-fill"></i> Holiday Packages</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#industries" data-bs-toggle="dropdown">Industries</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#industries"><i class="bi bi-briefcase-fill"></i> Corporate & Business</a></li>
+              <li><a class="dropdown-item" href="#industries"><i class="bi bi-bank"></i> Government & NGO</a></li>
+              <li><a class="dropdown-item" href="#industries"><i class="bi bi-building-fill"></i> Hospitality & Hotels</a></li>
+              <li><a class="dropdown-item" href="#industries"><i class="bi bi-calendar-event-fill"></i> Events & Conferences</a></li>
+              <li><a class="dropdown-item" href="#industries"><i class="bi bi-airplane-engines-fill"></i> Tourists & Diplomats</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#fleet">Fleet</a></li>
+          <li class="nav-item"><a class="nav-link" href="#insights">Insights</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#team">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#book" class="btn btn-grad ms-lg-2"><i class="bi bi-calendar-check me-2"></i>Book Now</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="home">
+  <div class="container py-5">
+    <div class="row align-items-center g-5 py-4">
+      <div class="col-lg-7" data-aos="fade-right">
+        <span class="hero-badge"><i class="bi bi-shield-check"></i> Rwanda's Trusted Mobility & Travel Partner</span>
+        <h1 class="mt-4 mb-3">Moving People, <span class="text-grad">Connecting Places</span></h1>
+        <p class="sub mb-4">End-to-end mobility, travel and tourism solutions for corporates, institutions and travellers — airport transfers, executive chauffeur, tours and tailored holiday packages, delivered with comfort, class and care.</p>
+        <div class="d-flex gap-3 flex-wrap mb-5">
+          <a href="#book" class="btn btn-grad btn-lg"><i class="bi bi-calendar-check me-2"></i>Book a Ride</a>
+          <a href="#solutions" class="btn btn-ghost btn-lg">Explore Solutions <i class="bi bi-arrow-right ms-1"></i></a>
+        </div>
+        <div class="row hero-stats g-4">
+          <div class="col-3"><div class="num">10K+</div><div class="lbl">Trips</div></div>
+          <div class="col-3"><div class="num">50+</div><div class="lbl">Destinations</div></div>
+          <div class="col-3"><div class="num">120+</div><div class="lbl">Vehicles</div></div>
+          <div class="col-3"><div class="num">98%</div><div class="lbl">On-Time</div></div>
+        </div>
+      </div>
+      <div class="col-lg-5" id="book" data-aos="fade-left">
+        <div class="booking">
+          <h5 class="fd fw-bold mb-1" style="color:var(--dark)">Book your journey</h5>
+          <p class="small text-muted mb-3">Get a free quote in minutes.</p>
+          <div class="tabs">
+            <div class="tab active" data-tab="transfer"><i class="bi bi-airplane-fill d-block mb-1"></i>Transfer</div>
+            <div class="tab" data-tab="chauffeur"><i class="bi bi-car-front-fill d-block mb-1"></i>Chauffeur</div>
+            <div class="tab" data-tab="tour"><i class="bi bi-globe-americas d-block mb-1"></i>Tour</div>
+          </div>
+          <div class="row">
+            <div class="col-6 fld"><label>From</label><input class="ip" id="bkFrom" placeholder="Pickup location"></div>
+            <div class="col-6 fld"><label>To</label><input class="ip" id="bkTo" placeholder="Destination"></div>
+            <div class="col-6 fld"><label>Date</label><input class="ip" id="bkDate" type="date"></div>
+            <div class="col-6 fld"><label>Passengers</label>
+              <select class="ip" id="bkPax"><option>1</option><option>2</option><option>3</option><option>4+</option></select>
+            </div>
+          </div>
+          <button type="button" id="bookBtn" class="btn btn-grad w-100 mt-2"><i class="bi bi-whatsapp me-2"></i>Request Quote on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Quick service tiles ===== -->
+<section class="sec pb-0">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-lg-3 col-md-6" data-aos="fade-up"><a class="qtile" href="#solutions"><div class="ic"><i class="bi bi-airplane-fill"></i></div><div><h6>Airport Transfers</h6><small>Meet, greet & go</small></div></a></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100"><a class="qtile" href="#solutions"><div class="ic"><i class="bi bi-car-front-fill"></i></div><div><h6>Chauffeur Drive</h6><small>Executive comfort</small></div></a></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200"><a class="qtile" href="#solutions"><div class="ic"><i class="bi bi-globe-americas"></i></div><div><h6>Tours & Safaris</h6><small>Discover Rwanda</small></div></a></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300"><a class="qtile" href="#solutions"><div class="ic"><i class="bi bi-umbrella-fill"></i></div><div><h6>Holiday Packages</h6><small>All-inclusive trips</small></div></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Solutions ===== -->
+<section class="sec" id="solutions">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="eyebrow">Our Solutions</span>
+      <h2 class="h-sec mt-3">Comprehensive <span class="text-grad">Mobility & Travel</span> Services</h2>
+      <p class="lead-sec mx-auto">A full suite of transport and tourism solutions, tailored to individuals, corporates and institutions.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="sol-card"><div class="top"><i class="bi bi-airplane-fill"></i></div><div class="bd"><h5>Airport Transfers</h5><p>Reliable, on-time airport pickups and drop-offs with meet-and-greet and flight tracking.</p><a class="lnk" href="#book">Book now <i class="bi bi-arrow-right"></i></a></div></div></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="sol-card"><div class="top"><i class="bi bi-car-front-fill"></i></div><div class="bd"><h5>Executive Chauffeur</h5><p>Professional, discreet chauffeurs and a premium fleet for executives and VIPs.</p><a class="lnk" href="#book">Book now <i class="bi bi-arrow-right"></i></a></div></div></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="sol-card"><div class="top"><i class="bi bi-buildings-fill"></i></div><div class="bd"><h5>Corporate Transport</h5><p>Staff shuttles, event logistics and managed accounts for businesses of every size.</p><a class="lnk" href="#book">Book now <i class="bi bi-arrow-right"></i></a></div></div></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="sol-card"><div class="top"><i class="bi bi-building-fill"></i></div><div class="bd"><h5>Hotel Transfers</h5><p>Smooth door-to-door transfers between hotels, venues and airports in total comfort.</p><a class="lnk" href="#book">Book now <i class="bi bi-arrow-right"></i></a></div></div></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="sol-card"><div class="top alt"><i class="bi bi-gem"></i></div><div class="bd"><h5>VIP Transportation</h5><p>Red-carpet, first-class transportation with premium vehicles and personal attention.</p><a class="lnk" href="#book">Book now <i class="bi bi-arrow-right"></i></a></div></div></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="sol-card"><div class="top alt"><i class="bi bi-map-fill"></i></div><div class="bd"><h5>Travel Planning</h5><p>End-to-end itinerary planning and coordination so every detail of your trip is handled.</p><a class="lnk" href="#book">Plan trip <i class="bi bi-arrow-right"></i></a></div></div></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="sol-card"><div class="top alt"><i class="bi bi-signpost-split-fill"></i></div><div class="bd"><h5>Local & Int'l Tours</h5><p>Curated guided tours across local gems and breathtaking international destinations.</p><a class="lnk" href="#book">Discover <i class="bi bi-arrow-right"></i></a></div></div></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="sol-card"><div class="top alt"><i class="bi bi-umbrella-fill"></i></div><div class="bd"><h5>Holiday Packages</h5><p>All-inclusive holiday packages designed around your budget, style and dream destinations.</p><a class="lnk" href="#book">View packages <i class="bi bi-arrow-right"></i></a></div></div></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="sol-card"><div class="top"><i class="bi bi-briefcase-fill"></i></div><div class="bd"><h5>Business Travel</h5><p>Efficient corporate travel booking and management that keeps teams moving and on budget.</p><a class="lnk" href="#book">Get started <i class="bi bi-arrow-right"></i></a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Stats band ===== -->
+<section class="stats-band sec">
+  <div class="container">
+    <div class="row text-center g-4">
+      <div class="col-6 col-lg-3 stat-c" data-aos="zoom-in"><div class="num">15+</div><div class="lbl">Years of Excellence</div></div>
+      <div class="col-6 col-lg-3 stat-c" data-aos="zoom-in" data-aos-delay="100"><div class="num">10K+</div><div class="lbl">Journeys Delivered</div></div>
+      <div class="col-6 col-lg-3 stat-c" data-aos="zoom-in" data-aos-delay="200"><div class="num">120+</div><div class="lbl">Vehicles in Fleet</div></div>
+      <div class="col-6 col-lg-3 stat-c" data-aos="zoom-in" data-aos-delay="300"><div class="num">50+</div><div class="lbl">Destinations Served</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Industries ===== -->
+<section class="sec" id="industries">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="eyebrow">Who We Serve</span>
+      <h2 class="h-sec mt-3">Trusted Across <span class="text-grad">Every Industry</span></h2>
+      <p class="lead-sec mx-auto">From boardrooms to tour groups, we tailor mobility and travel solutions to your sector.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="ind" style="background:url('images/demo-corporate.jpg') center/cover"><div class="ov"></div><div class="ct"><i class="bi bi-briefcase-fill"></i><h6>Corporate & Business</h6></div></div></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="ind" style="background:url('images/demo-government.jpg') center/cover"><div class="ov"></div><div class="ct"><i class="bi bi-bank"></i><h6>Government & NGO</h6></div></div></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="ind" style="background:url('images/demo-hotel.jpg') center/cover"><div class="ov"></div><div class="ct"><i class="bi bi-building-fill"></i><h6>Hospitality & Hotels</h6></div></div></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="ind" style="background:url('images/demo-events.jpg') center/cover"><div class="ov"></div><div class="ct"><i class="bi bi-calendar-event-fill"></i><h6>Events & Conferences</h6></div></div></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="ind" style="background:url('images/demo-tourist.jpg') center/cover"><div class="ov"></div><div class="ct"><i class="bi bi-airplane-engines-fill"></i><h6>Tourists & Diplomats</h6></div></div></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="ind" style="background:url('images/demo-group.jpg') center/cover"><div class="ov"></div><div class="ct"><i class="bi bi-people-fill"></i><h6>Groups & Weddings</h6></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Fleet ===== -->
+<section class="sec" id="fleet" style="background:var(--light)">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="eyebrow">Our Fleet</span>
+      <h2 class="h-sec mt-3">A Vehicle for <span class="text-grad">Every Journey</span></h2>
+      <p class="lead-sec mx-auto">Modern, well-maintained and fully insured vehicles, driven by professional chauffeurs.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6" data-aos="fade-up"><div class="fleet-card"><div class="ic"><i class="bi bi-car-front-fill"></i></div><h6>Executive Sedan</h6><div class="cap">Up to 3 passengers</div></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="fleet-card"><div class="ic"><i class="bi bi-truck-front-fill"></i></div><h6>Premium SUV / 4x4</h6><div class="cap">Up to 5 passengers</div></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="fleet-card"><div class="ic"><i class="bi bi-bus-front-fill"></i></div><h6>Luxury Van</h6><div class="cap">Up to 12 passengers</div></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300"><div class="fleet-card"><div class="ic"><i class="bi bi-bus-front"></i></div><h6>Coach / Bus</h6><div class="cap">Up to 30+ passengers</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Process ===== -->
+<section class="sec">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="eyebrow">How It Works</span>
+      <h2 class="h-sec mt-3">Booking in <span class="text-grad">4 Simple Steps</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6 step" data-aos="fade-up"><div class="n">1</div><h6>Request</h6><p>Tell us your route, date and preferences online or via WhatsApp.</p></div>
+      <div class="col-lg-3 col-md-6 step" data-aos="fade-up" data-aos-delay="100"><div class="n">2</div><h6>Confirm</h6><p>Receive a transparent quote and confirm your booking instantly.</p></div>
+      <div class="col-lg-3 col-md-6 step" data-aos="fade-up" data-aos-delay="200"><div class="n">3</div><h6>Ride</h6><p>Your professional chauffeur arrives on time, every time.</p></div>
+      <div class="col-lg-3 col-md-6 step" data-aos="fade-up" data-aos-delay="300"><div class="n">4</div><h6>Enjoy</h6><p>Relax and travel in comfort, class and complete peace of mind.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Presence ===== -->
+<section class="sec">
+  <div class="container">
+    <div class="presence p-4 p-lg-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6" data-aos="fade-right">
+          <span class="eyebrow">Global Reach</span>
+          <h2 class="h-sec text-white mt-3 mb-3">Rooted in Rwanda,<br><span class="text-grad">Connected to the World</span></h2>
+          <p style="color:#cbd5e1">Headquartered in Kigali, we move clients seamlessly across Rwanda and East Africa — and coordinate international travel to destinations worldwide.</p>
+          <div class="mt-3">
+            <span class="dest-chip">Kigali</span><span class="dest-chip">Musanze</span><span class="dest-chip">Rubavu</span>
+            <span class="dest-chip">Nairobi</span><span class="dest-chip">Kampala</span><span class="dest-chip">Dar es Salaam</span>
+            <span class="dest-chip">Dubai</span><span class="dest-chip">Europe</span><span class="dest-chip">+ more</span>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="row text-center g-4">
+            <div class="col-6"><div class="num fd fw-bold text-grad" style="font-size:2.4rem">24/7</div><div style="color:#9fb2cf">Operations & Support</div></div>
+            <div class="col-6"><div class="num fd fw-bold text-grad" style="font-size:2.4rem">5★</div><div style="color:#9fb2cf">Average Client Rating</div></div>
+            <div class="col-6"><div class="num fd fw-bold text-grad" style="font-size:2.4rem">100%</div><div style="color:#9fb2cf">Insured & Licensed</div></div>
+            <div class="col-6"><div class="num fd fw-bold text-grad" style="font-size:2.4rem">15+</div><div style="color:#9fb2cf">Years of Experience</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Testimonials ===== -->
+<section class="sec" style="background:var(--light)">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="eyebrow">Testimonials</span>
+      <h2 class="h-sec mt-3">What Our <span class="text-grad">Clients Say</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4" data-aos="fade-up"><div class="quote"><div class="stars mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><p>"Flawless airport pickups for our entire executive team. Punctual, professional and always comfortable."</p><div class="who"><div class="av">AM</div><div><strong>Alice M.</strong><div class="small text-muted">Corporate Client</div></div></div></div></div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100"><div class="quote"><div class="stars mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><p>"The Rwanda tour package was unforgettable. Brilliant guides, great vehicles and seamless planning."</p><div class="who"><div class="av">JD</div><div><strong>James D.</strong><div class="small text-muted">Tourist, UK</div></div></div></div></div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200"><div class="quote"><div class="stars mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><p>"Our go-to partner for conference shuttles. Reliable fleet and excellent account management."</p><div class="who"><div class="av">GK</div><div><strong>Grace K.</strong><div class="small text-muted">Events Manager</div></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Insights ===== -->
+<section class="sec" id="insights">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end flex-wrap mb-5" data-aos="fade-up">
+      <div>
+        <span class="eyebrow">Insights & News</span>
+        <h2 class="h-sec mt-3 mb-0">Travel Tips & <span class="text-grad">Company Updates</span></h2>
+      </div>
+      <a href="#" class="btn btn-grad mt-3 mt-lg-0">View All <i class="bi bi-arrow-right ms-1"></i></a>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="post"><div class="ph" style="background:linear-gradient(135deg,#0066FF,#00A8FF)"><i class="bi bi-airplane-fill"></i></div><div class="bd"><div class="tag">Travel Tips</div><h6>5 Things to Know Before Your Kigali Airport Transfer</h6><p>Make your arrival seamless with these simple tips from our chauffeur team.</p><a class="lnk fw-bold" style="color:var(--primary)" href="#">Read more <i class="bi bi-arrow-right"></i></a></div></div></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="post"><div class="ph" style="background:linear-gradient(135deg,#FF6B35,#FF9B6B)"><i class="bi bi-globe-americas"></i></div><div class="bd"><div class="tag">Tourism</div><h6>Top 7 Destinations to Explore in Rwanda This Season</h6><p>From volcanoes to lakes — discover the best of the land of a thousand hills.</p><a class="lnk fw-bold" style="color:var(--primary)" href="#">Read more <i class="bi bi-arrow-right"></i></a></div></div></div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="post"><div class="ph" style="background:linear-gradient(135deg,#13294B,#0066FF)"><i class="bi bi-briefcase-fill"></i></div><div class="bd"><div class="tag">Corporate</div><h6>How Managed Corporate Transport Cuts Costs</h6><p>Why leading companies outsource staff mobility to J&F Smart Logistics.</p><a class="lnk fw-bold" style="color:var(--primary)" href="#">Read more <i class="bi bi-arrow-right"></i></a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Partners ===== -->
+<section class="sec pt-0">
+  <div class="container">
+    <p class="text-center text-muted fw-semibold mb-4">Trusted by leading organisations & partners</p>
+    <div class="row g-3 align-items-center">
+      <div class="col-6 col-md-2" data-aos="zoom-in"><div class="partner">AKAGERA</div></div>
+      <div class="col-6 col-md-2" data-aos="zoom-in" data-aos-delay="50"><div class="partner">VISIT RW</div></div>
+      <div class="col-6 col-md-2" data-aos="zoom-in" data-aos-delay="100"><div class="partner">KIGALI CC</div></div>
+      <div class="col-6 col-md-2" data-aos="zoom-in" data-aos-delay="150"><div class="partner">SERENA</div></div>
+      <div class="col-6 col-md-2" data-aos="zoom-in" data-aos-delay="200"><div class="partner">RDB</div></div>
+      <div class="col-6 col-md-2" data-aos="zoom-in" data-aos-delay="250"><div class="partner">RwandAir</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="sec pt-0" id="contact">
+  <div class="container">
+    <div class="cta p-4 p-lg-5 text-center text-lg-start" data-aos="zoom-in">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h2 class="fd fw-bold mb-2" style="font-size:2rem">Ready to Start Your Journey?</h2>
+          <p class="mb-0" style="color:#eaf2ff">Get a free quote today and discover comfort-first mobility, travel & tourism with J&F Smart Logistics.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+          <a href="https://wa.me/250788351489" target="_blank" class="btn btn-light btn-lg fw-bold" style="color:var(--primary)"><i class="bi bi-whatsapp me-2"></i>Chat with Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="mega-foot pt-5">
+  <div class="container">
+    <div class="row g-4 pb-5">
+      <div class="col-lg-4 col-md-6">
+        <img src="images/logo.png" alt="J&F Smart Logistics Ltd" class="flogo mb-3">
+        <p>Your trusted partner for premium mobility, travel and tourism — delivering comfort, class and care on every journey across Rwanda, East Africa and beyond.</p>
+        <div class="foot-soc mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/250788351489"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h6>Solutions</h6>
+        <a href="#solutions">Airport Transfers</a><br>
+        <a href="#solutions">Executive Chauffeur</a><br>
+        <a href="#solutions">Corporate Transport</a><br>
+        <a href="#solutions">VIP Transportation</a><br>
+        <a href="#solutions">Hotel Transfers</a>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h6>Travel & Tourism</h6>
+        <a href="#solutions">Tours & Safaris</a><br>
+        <a href="#solutions">Holiday Packages</a><br>
+        <a href="#solutions">Travel Planning</a><br>
+        <a href="#solutions">Business Travel</a><br>
+        <a href="#solutions">Excursions</a>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h6>Stay in the Loop</h6>
+        <p>Subscribe for travel tips, offers and company updates.</p>
+        <div class="d-flex gap-2 mb-3">
+          <input class="news-ip" type="email" id="newsEmail" placeholder="Your email address">
+          <button type="button" id="newsBtn" class="btn btn-grad flex-shrink-0"><i class="bi bi-send"></i></button>
+        </div>
+        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Charity House, Ground Floor, Opp. Ste Famille Church, Kigali</p>
+        <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+250 788 351 489</p>
+        <p class="mb-0"><i class="bi bi-envelope-fill me-2"></i>info@jfsmartlogistics.com</p>
+      </div>
+    </div>
+    <div class="foot-bottom d-flex justify-content-between flex-wrap py-4">
+      <span>&copy; 2026 J&F Smart Logistics Ltd. All rights reserved.</span>
+      <span><a href="index.html">Main Site</a> &nbsp;·&nbsp; <a href="#">Privacy</a> &nbsp;·&nbsp; <a href="#">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/250788351489" target="_blank" class="position-fixed" style="right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.7rem;box-shadow:0 10px 24px rgba(37,211,102,.5);z-index:1040"><i class="bi bi-whatsapp"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({duration:800,easing:'ease-out-cubic',once:true,offset:80,disable:'mobile'});
+  // booking tabs
+  document.querySelectorAll('.booking .tab').forEach(t=>{
+    t.addEventListener('click',function(){
+      document.querySelectorAll('.booking .tab').forEach(x=>x.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+  var WA='250788351489';
+  // Booking form -> WhatsApp
+  var bookBtn=document.getElementById('bookBtn');
+  if(bookBtn) bookBtn.addEventListener('click',function(){
+    var active=document.querySelector('.booking .tab.active');
+    var type=active?active.getAttribute('data-tab'):'transfer';
+    var labels={transfer:'Airport Transfer',chauffeur:'Chauffeur Service',tour:'Tour'};
+    var v=function(id){var e=document.getElementById(id);return e?e.value.trim():'';};
+    var text='New Booking Request - J&F Smart Logistics\n'
+      +'Service: '+(labels[type]||type)+'\n'
+      +'From: '+(v('bkFrom')||'-')+'\n'
+      +'To: '+(v('bkTo')||'-')+'\n'
+      +'Date: '+(v('bkDate')||'-')+'\n'
+      +'Passengers: '+(v('bkPax')||'-');
+    window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(text),'_blank');
+  });
+  // Newsletter -> WhatsApp
+  var newsBtn=document.getElementById('newsBtn');
+  if(newsBtn) newsBtn.addEventListener('click',function(){
+    var e=document.getElementById('newsEmail');
+    var email=e?e.value.trim():'';
+    if(!email){ if(e) e.focus(); return; }
+    window.open('https://wa.me/'+WA+'?text='+encodeURIComponent('Hello J&F, please subscribe me to your newsletter: '+email),'_blank');
+  });
+</script>
+</body>
+</html>
