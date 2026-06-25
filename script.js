@@ -4,10 +4,10 @@
 
 // === CONFIGURATION - UPDATE YOUR DETAILS HERE ===
 const CONFIG = {
-    whatsappNumber: '+250788351489',  // ← CHANGE THIS (include country code, no + or spaces)
-    phone: '+ (250) 788-351489',    // Your display phone number
-    email: 'jfsmart.logisticsltd@gmail.com/info@jfsmartlogistics.com',  // Your email
-    address: 'Charity House, Ground Floor Opps Ste Famille Church'  // Your address
+    whatsappNumber: '250788351489',  // ← CHANGE THIS (include country code, no + or spaces)
+    phone: '+250 788 351 489',    // Your display phone number
+    email: 'jfsmart.logisticsltd@gmail.com / info@jfsmartlogistics.com',  // Your email
+    address: 'Charity House, Ground Floor, Opp. Ste Famille Church, Kigali'  // Your address
 };
 
 // === Initialize Everything ===
@@ -134,7 +134,7 @@ function updateContactInfo() {
     // Update WhatsApp button
     const whatsappButton = document.getElementById('whatsappButton');
     if (whatsappButton) {
-        const message = encodeURIComponent('Hello! I would like to know more about your logistics services.');
+        const message = encodeURIComponent('Hello! I would like to know more about your mobility & travel services.');
         whatsappButton.href = `https://wa.me/${CONFIG.whatsappNumber}?text=${message}`;
     }
 }
