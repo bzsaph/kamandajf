@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="J&F Smart Logistics Ltd - Mobility, travel & tourism services in Kigali, Rwanda. Airport transfers, executive chauffeur, corporate transport, VIP transport, tours, holiday packages and truck freight from Europe to Rwanda.">
-    <meta name="keywords" content="airport transfers Kigali, executive chauffeur Rwanda, corporate transport, hotel transfers, VIP transport, travel planning, Rwanda tours, gorilla trekking, holiday packages, business travel, excursions, freight Europe to Rwanda, trucking, cargo, Mombasa, Dar es Salaam, Kigali, Rwanda">
+    <meta name="description" content="J&F Smart Logistics Ltd - Mobility, travel & tourism services in Kigali, Rwanda. Airport transfers, executive chauffeur, corporate transport, VIP transport, tours, holiday packages and full trucking & cargo logistics: local, across Africa and from Europe, Asia and the USA.">
+    <meta name="keywords" content="airport transfers Kigali, executive chauffeur Rwanda, corporate transport, hotel transfers, VIP transport, travel planning, Rwanda tours, gorilla trekking, holiday packages, business travel, excursions, trucking Rwanda, truck transport, cargo logistics, freight Europe to Rwanda, freight China to Rwanda, shipping USA to Rwanda, air freight Kigali, trucking East Africa, cargo, Mombasa, Dar es Salaam, Kigali, Rwanda">
     <title>J&F Smart Logistics Ltd - Mobility, Travel & Tourism in Rwanda</title>
 
     <!-- Bootstrap 5.3 CSS -->
@@ -34,10 +34,10 @@
                 <div class="topbar-info">
                     <a href="tel:+250788351489"><i class="bi bi-telephone-fill"></i> +250 788 351 489</a>
                     <a href="mailto:info@jfsmartlogistics.com"><i class="bi bi-envelope-fill"></i> info@jfsmartlogistics.com</a>
-                    <span><i class="bi bi-geo-alt-fill"></i> Kigali, Rwanda</span>
+                    <span data-i18n="siteHeader.01"><i class="bi bi-geo-alt-fill"></i> Kigali, Rwanda</span>
                 </div>
                 <div class="topbar-info">
-                    <span><i class="bi bi-headset"></i> 24/7 bookings on WhatsApp</span>
+                    <span data-i18n="siteHeader.02"><i class="bi bi-headset"></i> 24/7 bookings on WhatsApp</span>
                     <span class="topbar-social">
                         <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
                         <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
@@ -53,24 +53,34 @@
                 <a class="navbar-brand d-flex align-items-center" href="#home">
                     <img src="images/logo.png" alt="J&F Smart Logistics Ltd" class="logo-img me-3" id="companyLogo">
                     <div class="brand-info d-none d-sm-flex">
-                        <span class="brand-tagline">Bridging Global Markets with Confidence</span>
+                        <span data-i18n="siteHeader.03" class="brand-tagline">Bridging Global Markets with Confidence</span>
                     </div>
                 </a>
+                <div class="dropdown lang-switch ms-auto me-2 ms-lg-3 me-lg-0 order-lg-3">
+                    <button class="lang-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Change language">
+                        <i class="bi bi-translate"></i> <span class="lang-current">EN</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="?lang=en" data-lang="en">English</a></li>
+                        <li><a class="dropdown-item" href="?lang=fr" data-lang="fr">Français</a></li>
+                        <li><a class="dropdown-item" href="?lang=rw" data-lang="rw">Kinyarwanda</a></li>
+                    </ul>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
                     <ul class="navbar-nav ms-auto align-items-lg-center">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#freight">Cargo</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="corporate.html">Enterprise</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a data-i18n="siteHeader.04" class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a data-i18n="siteHeader.05" class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a data-i18n="siteHeader.06" class="nav-link" href="#freight">Trucking</a></li>
+                        <li class="nav-item"><a data-i18n="siteHeader.07" class="nav-link" href="#destinations">Destinations</a></li>
+                        <li class="nav-item"><a data-i18n="siteHeader.08" class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a data-i18n="siteHeader.09" class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a data-i18n="siteHeader.10" class="nav-link" href="corporate.html">Enterprise</a></li>
+                        <li class="nav-item"><a data-i18n="siteHeader.11" class="nav-link" href="#contact">Contact</a></li>
                         <li class="nav-item ms-lg-3">
-                            <a class="btn btn-accent" href="#book">
+                            <a data-i18n="siteHeader.12" class="btn btn-accent" href="#book">
                                 <i class="bi bi-calendar2-check me-2"></i>Book a Ride
                             </a>
                         </li>
@@ -87,28 +97,28 @@
         <div class="container position-relative">
             <div class="row align-items-center g-5 hero-rw-row">
                 <div class="col-lg-7" data-aos="fade-up">
-                    <span class="hero-rw-badge">
+                    <span data-i18n="home.01" class="hero-rw-badge">
                         <span class="flag-dots"><i></i><i></i><i></i></span>
                         Kigali &middot; Rwanda &middot; East Africa
                     </span>
-                    <h1 class="hero-rw-title">
+                    <h1 data-i18n="home.02" class="hero-rw-title">
                         Moving People &amp; Cargo
                         <span class="text-accent">Across Rwanda &amp; Beyond</span>
                     </h1>
-                    <p class="hero-rw-lead">
-                        Airport transfers, executive chauffeurs, tours across Rwanda and truck freight from
-                        Europe to Kigali. We plan every route and handle the details, so your
+                    <p data-i18n="home.03" class="hero-rw-lead">
+                        Airport transfers, executive chauffeurs, trucking and cargo logistics, and tours
+                        across Rwanda. We plan every route and handle the details, so your
                         passengers and your cargo arrive on time.
                     </p>
                     <div class="d-flex gap-3 flex-wrap mb-4">
-                        <a href="#book" class="btn btn-accent btn-lg">Get a Free Quote <i class="bi bi-arrow-right ms-2"></i></a>
-                        <a href="#services" class="btn btn-ghost btn-lg"><i class="bi bi-grid me-2"></i>Our Services</a>
+                        <a data-i18n="home.04" href="#book" class="btn btn-accent btn-lg">Get a Free Quote <i class="bi bi-arrow-right ms-2"></i></a>
+                        <a data-i18n="home.05" href="#services" class="btn btn-ghost btn-lg"><i class="bi bi-grid me-2"></i>Our Services</a>
                     </div>
                     <ul class="hero-rw-points">
-                        <li><i class="bi bi-airplane-engines"></i> Flight-tracked pickups</li>
-                        <li><i class="bi bi-person-badge"></i> Professional chauffeurs</li>
-                        <li><i class="bi bi-truck"></i> Europe &rarr; Rwanda freight</li>
-                        <li><i class="bi bi-shield-check"></i> Fully insured</li>
+                        <li data-i18n="home.06"><i class="bi bi-airplane-engines"></i> Flight-tracked pickups</li>
+                        <li data-i18n="home.07"><i class="bi bi-person-badge"></i> Professional chauffeurs</li>
+                        <li data-i18n="home.08"><i class="bi bi-truck"></i> Trucking &amp; cargo logistics</li>
+                        <li data-i18n="home.09"><i class="bi bi-shield-check"></i> Fully insured</li>
                     </ul>
                 </div>
 
@@ -116,18 +126,18 @@
                 <div class="col-lg-5" data-aos="fade-up" data-aos-delay="150">
                     <div class="booking-card" id="book">
                         <div class="booking-head">
-                            <h2>Plan Your Journey</h2>
-                            <p>Tell us where you're going and we'll reply with a quote on WhatsApp.</p>
+                            <h2 data-i18n="home.10">Plan Your Journey</h2>
+                            <p data-i18n="home.11">Tell us where you're going and we'll reply with a quote on WhatsApp.</p>
                         </div>
                         <div class="booking-tabs" role="tablist">
-                            <button type="button" class="active" data-mode="mobility"><i class="bi bi-car-front-fill"></i> Transfer</button>
-                            <button type="button" data-mode="tourism"><i class="bi bi-compass-fill"></i> Tours</button>
-                            <button type="button" data-mode="freight"><i class="bi bi-truck"></i> Cargo</button>
+                            <button data-i18n="home.12" type="button" class="active" data-mode="mobility"><i class="bi bi-car-front-fill"></i> Transfer</button>
+                            <button data-i18n="home.13" type="button" data-mode="tourism"><i class="bi bi-compass-fill"></i> Tours</button>
+                            <button data-i18n="home.14" type="button" data-mode="freight"><i class="bi bi-truck"></i> Trucking</button>
                         </div>
                         <form id="bookingForm" novalidate>
                             <div class="row g-2">
                                 <div class="col-12">
-                                    <label class="bk-label" for="bkService">Service</label>
+                                    <label data-i18n="home.15" class="bk-label" for="bkService">Service</label>
                                     <div class="bk-field"><i class="bi bi-list-ul"></i>
                                         <select id="bkService" required></select>
                                     </div>
@@ -157,16 +167,16 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <label class="bk-label" for="bkName">Your name</label>
+                                    <label data-i18n="home.20" class="bk-label" for="bkName">Your name</label>
                                     <div class="bk-field"><i class="bi bi-person"></i>
                                         <input type="text" id="bkName" placeholder="Full name" required>
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-accent w-100 mt-3 py-3">
+                            <button data-i18n="home.21" type="submit" class="btn btn-accent w-100 mt-3 py-3">
                                 <i class="bi bi-whatsapp me-2"></i>Get My Quote
                             </button>
-                            <p class="booking-note"><i class="bi bi-lock"></i> No payment needed. We usually reply within minutes.</p>
+                            <p data-i18n="home.22" class="booking-note"><i class="bi bi-lock"></i> No payment needed. We usually reply within minutes.</p>
                         </form>
                     </div>
                 </div>
@@ -180,19 +190,61 @@
             <div class="stats-card" data-aos="fade-up">
                 <div class="stat-item">
                     <i class="bi bi-signpost-2"></i>
-                    <div><span class="stat-num" data-count="10000" data-suffix="+" data-compact="true">10K+</span><span class="stat-cap">Trips completed</span></div>
+                    <div><span class="stat-num" data-count="1000" data-suffix="+" data-compact="true">1K+</span><span data-i18n="stats-strip.01" class="stat-cap">Trips completed</span></div>
                 </div>
                 <div class="stat-item">
                     <i class="bi bi-stopwatch"></i>
-                    <div><span class="stat-num" data-count="98" data-suffix="%">98%</span><span class="stat-cap">On-time pickups</span></div>
+                    <div><span class="stat-num" data-count="98" data-suffix="%">98%</span><span data-i18n="stats-strip.02" class="stat-cap">On-time pickups</span></div>
                 </div>
                 <div class="stat-item">
                     <i class="bi bi-pin-map"></i>
-                    <div><span class="stat-num" data-count="50" data-suffix="+">50+</span><span class="stat-cap">Destinations</span></div>
+                    <div><span class="stat-num" data-count="50" data-suffix="+">50+</span><span data-i18n="stats-strip.03" class="stat-cap">Destinations</span></div>
                 </div>
                 <div class="stat-item">
                     <i class="bi bi-clock-history"></i>
-                    <div><span class="stat-num">24/7</span><span class="stat-cap">Booking support</span></div>
+                    <div><span class="stat-num">24/7</span><span data-i18n="stats-strip.04" class="stat-cap">Booking support</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core services overview -->
+    <section class="core-rw">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <a href="#services" class="core-card" data-tab="#tab-mobility">
+                        <img src="images/rw-convention.jpg" alt="Kigali Convention Centre and city roads" loading="lazy">
+                        <div class="core-body">
+                            <span class="core-icon"><i class="bi bi-car-front-fill"></i></span>
+                            <h3 data-i18n="core.01">Mobility &amp; Travel</h3>
+                            <p data-i18n="core.02">Airport &amp; hotel transfers, executive chauffeurs, corporate and VIP transport.</p>
+                            <span data-i18n="core.03" class="core-more">Explore services <i class="bi bi-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <a href="#services" class="core-card is-key" data-tab="#tab-freight">
+                        <img src="images/rw-trucks.jpg" alt="Container trucks in Kigali" loading="lazy">
+                        <span data-i18n="core.04" class="core-flag"><i class="bi bi-star-fill"></i> Key service</span>
+                        <div class="core-body">
+                            <span class="core-icon"><i class="bi bi-truck"></i></span>
+                            <h3 data-i18n="core.05">Trucking &amp; Logistics</h3>
+                            <p data-i18n="core.06">Truck transport across Rwanda and Africa, plus full import logistics from Europe, Asia and the USA.</p>
+                            <span data-i18n="core.07" class="core-more">Explore services <i class="bi bi-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#services" class="core-card" data-tab="#tab-tourism">
+                        <img src="images/rw-volcanoes.jpg" alt="Virunga volcanoes, Rwanda" loading="lazy">
+                        <div class="core-body">
+                            <span class="core-icon"><i class="bi bi-globe-americas"></i></span>
+                            <h3 data-i18n="core.08">Travel &amp; Tourism</h3>
+                            <p data-i18n="core.09">Travel planning, tours, holiday packages, business travel and excursions.</p>
+                            <span data-i18n="core.10" class="core-more">Explore services <i class="bi bi-arrow-right"></i></span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -203,24 +255,24 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center" data-aos="fade-up">
-                    <span class="section-badge">What We Do</span>
-                    <h2 class="section-title mt-3 mb-3">Mobility, Travel &amp; <span class="gradient-text">Tourism Solutions</span></h2>
-                    <p class="section-description">
-                        One team for people and goods. We drive you to the meeting, show you Rwanda
-                        when the work is done and truck your cargo from Europe to your door.
+                    <span data-i18n="services.01" class="section-badge">What We Do</span>
+                    <h2 data-i18n="services.02" class="section-title mt-3 mb-3">Mobility, Logistics &amp; <span class="gradient-text">Tourism Solutions</span></h2>
+                    <p data-i18n="services.03" class="section-description">
+                        One team for people and goods. We drive your passengers, truck your cargo
+                        across Rwanda and the region, and show your guests the country.
                     </p>
                 </div>
             </div>
 
             <div class="service-switch" role="tablist" data-aos="fade-up">
-                <button class="active" data-bs-toggle="pill" data-bs-target="#tab-mobility" type="button" role="tab">
+                <button data-i18n="services.04" class="active" data-bs-toggle="pill" data-bs-target="#tab-mobility" type="button" role="tab">
                     <i class="bi bi-car-front-fill"></i> Mobility &amp; Travel Services
                 </button>
-                <button data-bs-toggle="pill" data-bs-target="#tab-tourism" type="button" role="tab">
-                    <i class="bi bi-globe-americas"></i> Travel &amp; Tourism Services
+                <button data-i18n="services.05" data-bs-toggle="pill" data-bs-target="#tab-freight" type="button" role="tab">
+                    <i class="bi bi-truck"></i> Trucking &amp; Logistics Services
                 </button>
-                <button data-bs-toggle="pill" data-bs-target="#tab-freight" type="button" role="tab">
-                    <i class="bi bi-truck"></i> Cargo &amp; Truck Logistics
+                <button data-i18n="services.06" data-bs-toggle="pill" data-bs-target="#tab-tourism" type="button" role="tab">
+                    <i class="bi bi-globe-americas"></i> Travel &amp; Tourism Services
                 </button>
             </div>
 
@@ -229,12 +281,12 @@
                 <div class="tab-pane fade show active" id="tab-mobility" role="tabpanel">
                     <div class="row g-4 align-items-stretch">
                         <div class="col-lg-5">
-                            <div class="service-feature" style="background-image:url('images/rw-airport.jpg')">
+                            <div class="service-feature" style="background-image:url('images/rw-kigali-business.jpg')">
                                 <div class="service-feature-body">
-                                    <span class="chip"><i class="bi bi-airplane"></i> Kigali International Airport</span>
-                                    <h3>Your chauffeur is waiting when you land.</h3>
-                                    <p>We track your flight, wait at arrivals with a name board and drive you straight to your hotel, office or event.</p>
-                                    <a href="#book" class="btn btn-accent btn-sm" data-book="Airport Transfers">Book an airport transfer</a>
+                                    <span data-i18n="services.07" class="chip"><i class="bi bi-airplane"></i> Kigali International Airport</span>
+                                    <h3 data-i18n="services.08">Your chauffeur is waiting when you land.</h3>
+                                    <p data-i18n="services.09">We track your flight, wait at arrivals with a name board and drive you straight to your hotel, office or event.</p>
+                                    <a data-i18n="services.10" href="#book" class="btn btn-accent btn-sm" data-book="Airport Transfers">Book an airport transfer</a>
                                 </div>
                             </div>
                         </div>
@@ -243,44 +295,44 @@
                                 <div class="col-md-6">
                                     <article class="svc-card">
                                         <div class="svc-icon"><i class="bi bi-airplane-fill"></i></div>
-                                        <h4>Airport Transfers</h4>
-                                        <p>On-time pickups and drop-offs with meet-and-greet and live flight tracking.</p>
-                                        <a href="#book" class="svc-link" data-book="Airport Transfers">Book now <i class="bi bi-arrow-right"></i></a>
+                                        <h4 data-i18n="services.11">Airport Transfers</h4>
+                                        <p data-i18n="services.12">On-time pickups and drop-offs with meet-and-greet and live flight tracking.</p>
+                                        <a data-i18n="services.13" href="#book" class="svc-link" data-book="Airport Transfers">Book now <i class="bi bi-arrow-right"></i></a>
                                     </article>
                                 </div>
                                 <div class="col-md-6">
                                     <article class="svc-card is-featured">
-                                        <span class="svc-tag"><i class="bi bi-star-fill"></i> Most popular</span>
+                                        <span data-i18n="services.14" class="svc-tag"><i class="bi bi-star-fill"></i> Most popular</span>
                                         <div class="svc-icon"><i class="bi bi-car-front-fill"></i></div>
-                                        <h4>Executive Chauffeur Services</h4>
-                                        <p>Discreet, professional chauffeurs and a premium fleet for executives on the move.</p>
-                                        <a href="#book" class="svc-link" data-book="Executive Chauffeur Services">Book now <i class="bi bi-arrow-right"></i></a>
+                                        <h4 data-i18n="services.15">Executive Chauffeur Services</h4>
+                                        <p data-i18n="services.16">Discreet, professional chauffeurs and a premium fleet for executives on the move.</p>
+                                        <a data-i18n="services.17" href="#book" class="svc-link" data-book="Executive Chauffeur Services">Book now <i class="bi bi-arrow-right"></i></a>
                                     </article>
                                 </div>
                                 <div class="col-md-6">
                                     <article class="svc-card">
                                         <div class="svc-icon"><i class="bi bi-buildings-fill"></i></div>
-                                        <h4>Corporate Transport Solutions</h4>
-                                        <p>Staff shuttles, event logistics and managed monthly accounts for organisations.</p>
-                                        <a href="#book" class="svc-link" data-book="Corporate Transport Solutions">Book now <i class="bi bi-arrow-right"></i></a>
+                                        <h4 data-i18n="services.18">Corporate Transport Solutions</h4>
+                                        <p data-i18n="services.19">Staff shuttles, event logistics and managed monthly accounts for organisations.</p>
+                                        <a data-i18n="services.20" href="#book" class="svc-link" data-book="Corporate Transport Solutions">Book now <i class="bi bi-arrow-right"></i></a>
                                     </article>
                                 </div>
                                 <div class="col-md-6">
                                     <article class="svc-card">
                                         <div class="svc-icon"><i class="bi bi-building-fill"></i></div>
-                                        <h4>Hotel Transfers</h4>
-                                        <p>Door-to-door transfers between hotels, venues and the airport, any time of day.</p>
-                                        <a href="#book" class="svc-link" data-book="Hotel Transfers">Book now <i class="bi bi-arrow-right"></i></a>
+                                        <h4 data-i18n="services.21">Hotel Transfers</h4>
+                                        <p data-i18n="services.22">Door-to-door transfers between hotels, venues and the airport, any time of day.</p>
+                                        <a data-i18n="services.23" href="#book" class="svc-link" data-book="Hotel Transfers">Book now <i class="bi bi-arrow-right"></i></a>
                                     </article>
                                 </div>
                                 <div class="col-12">
                                     <article class="svc-card svc-wide">
                                         <div class="svc-icon"><i class="bi bi-gem"></i></div>
                                         <div>
-                                            <h4>VIP Transportation Services</h4>
-                                            <p>First-class vehicles, security-conscious routing and personal attention for dignitaries, delegations and special guests.</p>
+                                            <h4 data-i18n="services.24">VIP Transportation Services</h4>
+                                            <p data-i18n="services.25">First-class vehicles, security-conscious routing and personal attention for dignitaries, delegations and special guests.</p>
                                         </div>
-                                        <a href="#book" class="btn btn-outline-brand" data-book="VIP Transportation Services">Request VIP</a>
+                                        <a data-i18n="services.26" href="#book" class="btn btn-outline-brand" data-book="VIP Transportation Services">Request VIP</a>
                                     </article>
                                 </div>
                             </div>
@@ -294,10 +346,10 @@
                         <div class="col-lg-5">
                             <div class="service-feature" style="background-image:url('images/rw-volcanoes.jpg')">
                                 <div class="service-feature-body">
-                                    <span class="chip"><i class="bi bi-tree"></i> Volcanoes National Park</span>
-                                    <h3>See the land of a thousand hills.</h3>
-                                    <p>Gorilla trekking, safaris, lake getaways and city tours. We plan the itinerary, drive you and book the permits.</p>
-                                    <a href="#book" class="btn btn-accent btn-sm" data-book="Local and International Tours">Plan a tour</a>
+                                    <span data-i18n="services.27" class="chip"><i class="bi bi-tree"></i> Volcanoes National Park</span>
+                                    <h3 data-i18n="services.28">See the land of a thousand hills.</h3>
+                                    <p data-i18n="services.29">Gorilla trekking, safaris, lake getaways and city tours. We plan the itinerary, drive you and book the permits.</p>
+                                    <a data-i18n="services.30" href="#book" class="btn btn-accent btn-sm" data-book="Local and International Tours">Plan a tour</a>
                                 </div>
                             </div>
                         </div>
@@ -306,44 +358,44 @@
                                 <div class="col-md-6">
                                     <article class="svc-card">
                                         <div class="svc-icon"><i class="bi bi-map-fill"></i></div>
-                                        <h4>Travel Planning &amp; Coordination</h4>
-                                        <p>End-to-end itineraries covering flights, hotels, permits and transport, all in one plan.</p>
-                                        <a href="#book" class="svc-link" data-book="Travel Planning & Coordination">Enquire <i class="bi bi-arrow-right"></i></a>
+                                        <h4 data-i18n="services.31">Travel Planning &amp; Coordination</h4>
+                                        <p data-i18n="services.32">End-to-end itineraries covering flights, hotels, permits and transport, all in one plan.</p>
+                                        <a data-i18n="services.33" href="#book" class="svc-link" data-book="Travel Planning & Coordination">Enquire <i class="bi bi-arrow-right"></i></a>
                                     </article>
                                 </div>
                                 <div class="col-md-6">
                                     <article class="svc-card is-featured">
-                                        <span class="svc-tag"><i class="bi bi-star-fill"></i> Guest favourite</span>
+                                        <span data-i18n="services.34" class="svc-tag"><i class="bi bi-star-fill"></i> Guest favourite</span>
                                         <div class="svc-icon"><i class="bi bi-signpost-split-fill"></i></div>
-                                        <h4>Local and International Tours</h4>
-                                        <p>Guided tours across Rwanda and the region, from Kigali to Musanze, Akagera and beyond.</p>
-                                        <a href="#book" class="svc-link" data-book="Local and International Tours">Enquire <i class="bi bi-arrow-right"></i></a>
+                                        <h4 data-i18n="services.35">Local and International Tours</h4>
+                                        <p data-i18n="services.36">Guided tours across Rwanda and the region, from Kigali to Musanze, Akagera and beyond.</p>
+                                        <a data-i18n="services.37" href="#book" class="svc-link" data-book="Local and International Tours">Enquire <i class="bi bi-arrow-right"></i></a>
                                     </article>
                                 </div>
                                 <div class="col-md-6">
                                     <article class="svc-card">
                                         <div class="svc-icon"><i class="bi bi-umbrella-fill"></i></div>
-                                        <h4>Holiday Packages</h4>
-                                        <p>All-inclusive packages built around your budget, travel style and dream destination.</p>
-                                        <a href="#book" class="svc-link" data-book="Holiday Packages">Enquire <i class="bi bi-arrow-right"></i></a>
+                                        <h4 data-i18n="services.38">Holiday Packages</h4>
+                                        <p data-i18n="services.39">All-inclusive packages built around your budget, travel style and dream destination.</p>
+                                        <a data-i18n="services.40" href="#book" class="svc-link" data-book="Holiday Packages">Enquire <i class="bi bi-arrow-right"></i></a>
                                     </article>
                                 </div>
                                 <div class="col-md-6">
                                     <article class="svc-card">
                                         <div class="svc-icon"><i class="bi bi-briefcase-fill"></i></div>
-                                        <h4>Business Travel Management</h4>
-                                        <p>Corporate travel booking and management that keeps your teams moving and on budget.</p>
-                                        <a href="#book" class="svc-link" data-book="Business Travel Management">Enquire <i class="bi bi-arrow-right"></i></a>
+                                        <h4 data-i18n="services.41">Business Travel Management</h4>
+                                        <p data-i18n="services.42">Corporate travel booking and management that keeps your teams moving and on budget.</p>
+                                        <a data-i18n="services.43" href="#book" class="svc-link" data-book="Business Travel Management">Enquire <i class="bi bi-arrow-right"></i></a>
                                     </article>
                                 </div>
                                 <div class="col-12">
                                     <article class="svc-card svc-wide">
                                         <div class="svc-icon"><i class="bi bi-compass-fill"></i></div>
                                         <div>
-                                            <h4>Tourism &amp; Excursion Services</h4>
-                                            <p>Day trips, cultural visits and excursions led by expert local guides, ideal for delegates with a free afternoon.</p>
+                                            <h4 data-i18n="services.44">Tourism &amp; Excursion Services</h4>
+                                            <p data-i18n="services.45">Day trips, cultural visits and excursions led by expert local guides, ideal for delegates with a free afternoon.</p>
                                         </div>
-                                        <a href="#book" class="btn btn-outline-brand" data-book="Tourism & Excursion Services">Book excursion</a>
+                                        <a data-i18n="services.46" href="#book" class="btn btn-outline-brand" data-book="Tourism & Excursion Services">Book excursion</a>
                                     </article>
                                 </div>
                             </div>
@@ -351,16 +403,16 @@
                     </div>
                 </div>
 
-                <!-- Cargo & Truck Logistics -->
+                <!-- Trucking & Logistics -->
                 <div class="tab-pane fade" id="tab-freight" role="tabpanel">
                     <div class="row g-4 align-items-stretch">
                         <div class="col-lg-5">
                             <div class="service-feature" style="background-image:url('images/rw-trucks.jpg')">
                                 <div class="service-feature-body">
-                                    <span class="chip"><i class="bi bi-globe-europe-africa"></i> Europe &rarr; Rwanda</span>
-                                    <h3>Your cargo, from Europe to your door.</h3>
-                                    <p>Sea freight to Mombasa or Dar es Salaam, then our trucks bring it by road to Kigali and anywhere in Rwanda.</p>
-                                    <a href="#book" class="btn btn-accent btn-sm" data-book="Europe to Rwanda Freight">Request a freight quote</a>
+                                    <span data-i18n="services.47" class="chip"><i class="bi bi-truck"></i> Rwanda &middot; Africa &middot; Worldwide</span>
+                                    <h3 data-i18n="services.48">Trucks ready for every load.</h3>
+                                    <p data-i18n="services.49">From deliveries around Kigali to cross-border runs across Africa and shipments from Europe, Asia and the USA, we handle the full logistics chain and move your goods safely and on schedule.</p>
+                                    <a data-i18n="services.50" href="#book" class="btn btn-accent btn-sm" data-book="Local Truck Transport (Rwanda)">Request a trucking quote</a>
                                 </div>
                             </div>
                         </div>
@@ -368,45 +420,51 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <article class="svc-card is-featured">
-                                        <span class="svc-tag"><i class="bi bi-star-fill"></i> New</span>
-                                        <div class="svc-icon"><i class="bi bi-globe-europe-africa"></i></div>
-                                        <h4>Europe to Rwanda Freight</h4>
-                                        <p>Door-to-door shipping from Germany, Belgium, the Netherlands, France, the UK and more.</p>
-                                        <a href="#book" class="svc-link" data-book="Europe to Rwanda Freight">Get a quote <i class="bi bi-arrow-right"></i></a>
+                                        <span data-i18n="services.51" class="svc-tag"><i class="bi bi-star-fill"></i> Key service</span>
+                                        <div class="svc-icon"><i class="bi bi-truck"></i></div>
+                                        <h4 data-i18n="services.52">Local Truck Transport</h4>
+                                        <p data-i18n="services.53">Full and part truckloads within Rwanda: distribution, construction materials, relocations and deliveries between cities.</p>
+                                        <a data-i18n="services.54" href="#book" class="svc-link" data-book="Local Truck Transport (Rwanda)">Get a quote <i class="bi bi-arrow-right"></i></a>
                                     </article>
                                 </div>
                                 <div class="col-md-6">
                                     <article class="svc-card">
-                                        <div class="svc-icon"><i class="bi bi-truck"></i></div>
-                                        <h4>Truck Transport (FTL &amp; LTL)</h4>
-                                        <p>Full and part truckloads for containers, general goods and palletised cargo.</p>
-                                        <a href="#book" class="svc-link" data-book="Truck Transport (FTL & LTL)">Get a quote <i class="bi bi-arrow-right"></i></a>
+                                        <div class="svc-icon"><i class="bi bi-sign-turn-right"></i></div>
+                                        <h4 data-i18n="services.55">Africa &amp; Regional Trucking</h4>
+                                        <p data-i18n="services.56">Cross-border transport to and from Uganda, Kenya, Tanzania, Burundi, the DRC and further across Africa.</p>
+                                        <a data-i18n="services.57" href="#book" class="svc-link" data-book="Africa & Regional Trucking">Get a quote <i class="bi bi-arrow-right"></i></a>
+                                    </article>
+                                </div>
+                                <div class="col-md-6">
+                                    <article class="svc-card">
+                                        <div class="svc-icon"><i class="bi bi-globe-europe-africa"></i></div>
+                                        <h4 data-i18n="services.58">International Freight</h4>
+                                        <p data-i18n="services.59">Sea and air freight from Europe, Asia, the USA and worldwide, delivered door to door in Rwanda.</p>
+                                        <a data-i18n="services.60" href="#book" class="svc-link" data-book="International Freight (Europe, Asia, USA)">Get a quote <i class="bi bi-arrow-right"></i></a>
                                     </article>
                                 </div>
                                 <div class="col-md-6">
                                     <article class="svc-card">
                                         <div class="svc-icon"><i class="bi bi-signpost-split"></i></div>
-                                        <h4>Port-to-Kigali Haulage</h4>
-                                        <p>Container haulage from Mombasa and Dar es Salaam along the Northern and Central Corridors.</p>
-                                        <a href="#book" class="svc-link" data-book="Port-to-Kigali Haulage">Get a quote <i class="bi bi-arrow-right"></i></a>
+                                        <h4 data-i18n="services.61">Port-to-Kigali Haulage</h4>
+                                        <p data-i18n="services.62">Container haulage from Mombasa and Dar es Salaam along the Northern and Central Corridors.</p>
+                                        <a data-i18n="services.63" href="#book" class="svc-link" data-book="Port-to-Kigali Haulage">Get a quote <i class="bi bi-arrow-right"></i></a>
                                     </article>
                                 </div>
                                 <div class="col-md-6">
                                     <article class="svc-card">
                                         <div class="svc-icon"><i class="bi bi-file-earmark-check"></i></div>
-                                        <h4>Customs &amp; Documentation</h4>
-                                        <p>We coordinate paperwork, transit documents and clearance with licensed agents at every border.</p>
-                                        <a href="#book" class="svc-link" data-book="Customs & Documentation Support">Get a quote <i class="bi bi-arrow-right"></i></a>
+                                        <h4 data-i18n="services.64">Customs &amp; Documentation</h4>
+                                        <p data-i18n="services.65">We coordinate paperwork, transit documents and clearance with licensed agents at every border.</p>
+                                        <a data-i18n="services.66" href="#book" class="svc-link" data-book="Customs & Documentation Support">Get a quote <i class="bi bi-arrow-right"></i></a>
                                     </article>
                                 </div>
-                                <div class="col-12">
-                                    <article class="svc-card svc-wide">
+                                <div class="col-md-6">
+                                    <article class="svc-card">
                                         <div class="svc-icon"><i class="bi bi-box-seam"></i></div>
-                                        <div>
-                                            <h4>Heavy, Project &amp; Vehicle Cargo</h4>
-                                            <p>Low-bed trucks for machinery, construction equipment and vehicles, with route planning and escorts where required.</p>
-                                        </div>
-                                        <a href="#book" class="btn btn-outline-brand" data-book="Heavy, Project & Vehicle Cargo">Discuss cargo</a>
+                                        <h4 data-i18n="services.67">Heavy, Project &amp; Vehicle Cargo</h4>
+                                        <p data-i18n="services.68">Low-bed trucks for machinery, construction equipment and vehicles, with route planning.</p>
+                                        <a data-i18n="services.69" href="#book" class="svc-link" data-book="Heavy, Project & Vehicle Cargo">Get a quote <i class="bi bi-arrow-right"></i></a>
                                     </article>
                                 </div>
                             </div>
@@ -422,41 +480,41 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center" data-aos="fade-up">
-                    <span class="section-badge">How It Works</span>
-                    <h2 class="section-title mt-3 mb-3">From Request to <span class="gradient-text">Arrival</span></h2>
-                    <p class="section-description">A simple, reliable process for every job, whether it's one transfer, a two-week tour or a container from Europe.</p>
+                    <span data-i18n="section-pad.01" class="section-badge">How It Works</span>
+                    <h2 data-i18n="section-pad.02" class="section-title mt-3 mb-3">From Request to <span class="gradient-text">Arrival</span></h2>
+                    <p data-i18n="section-pad.03" class="section-description">A simple, reliable process for every job, whether it's one transfer, a two-week tour or a container from overseas.</p>
                 </div>
             </div>
             <div class="process-track">
                 <div class="process-step" data-aos="fade-up" data-aos-delay="0">
                     <div class="process-num">01</div>
                     <div class="process-icon"><i class="bi bi-chat-dots"></i></div>
-                    <h5>Send a Request</h5>
-                    <p>Use the booking form or WhatsApp to share your route, date and number of passengers.</p>
+                    <h5 data-i18n="section-pad.04">Send a Request</h5>
+                    <p data-i18n="section-pad.05">Use the booking form or WhatsApp to share your route, date and passenger or cargo details.</p>
                 </div>
                 <div class="process-step" data-aos="fade-up" data-aos-delay="100">
                     <div class="process-num">02</div>
                     <div class="process-icon"><i class="bi bi-clipboard-check"></i></div>
-                    <h5>Confirm &amp; Plan</h5>
-                    <p>We send a clear quote, match the right vehicle and confirm your itinerary.</p>
+                    <h5 data-i18n="section-pad.06">Confirm &amp; Plan</h5>
+                    <p data-i18n="section-pad.07">We send a clear quote, match the right vehicle or truck and confirm the plan.</p>
                 </div>
                 <div class="process-step" data-aos="fade-up" data-aos-delay="200">
                     <div class="process-num">03</div>
                     <div class="process-icon"><i class="bi bi-person-check"></i></div>
-                    <h5>Meet Your Chauffeur</h5>
-                    <p>Your driver's details are shared in advance and they arrive early, every time.</p>
+                    <h5 data-i18n="section-pad.08">Pickup &amp; Loading</h5>
+                    <p data-i18n="section-pad.09">Your driver's details are shared in advance and they arrive early, every time.</p>
                 </div>
                 <div class="process-step" data-aos="fade-up" data-aos-delay="300">
                     <div class="process-num">04</div>
                     <div class="process-icon"><i class="bi bi-geo-alt"></i></div>
-                    <h5>Arrive in Comfort</h5>
-                    <p>We track the trip from pickup to drop-off, with support on call around the clock.</p>
+                    <h5 data-i18n="section-pad.10">Tracked to Delivery</h5>
+                    <p data-i18n="section-pad.11">We track every trip and shipment until drop-off, with support on call around the clock.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Freight: Europe to Rwanda -->
+    <!-- Trucking & Logistics -->
     <section id="freight" class="section-pad freight-rw">
         <div class="container">
             <div class="row g-5 align-items-center">
@@ -464,38 +522,57 @@
                     <div class="freight-media">
                         <img src="images/rw-port.jpg" alt="Containers and trucks at the port of Mombasa" class="freight-img-main" loading="lazy">
                         <img src="images/rw-heavy-cargo.jpg" alt="Low-bed truck carrying heavy machinery in Kigali" class="freight-img-sub" loading="lazy">
-                        <div class="freight-badge"><i class="bi bi-truck"></i><div><strong>Europe &rarr; Kigali</strong><span>Sea + road, door to door</span></div></div>
+                        <div class="freight-badge"><i class="bi bi-truck"></i><div><strong data-i18n="freight.01">Trucking &amp; Cargo</strong><span data-i18n="freight.02">Rwanda &middot; Africa &middot; Worldwide</span></div></div>
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
-                    <span class="section-badge">Cargo &amp; Truck Logistics</span>
-                    <h2 class="section-title mt-3 mb-3">From Europe <span class="gradient-text">to Rwanda</span>, One Partner</h2>
-                    <p class="about-text mb-4">
-                        Importing machinery, vehicles, stock or personal effects? We handle the whole journey:
-                        collection in Europe, ocean freight to East Africa and trucking inland to your
-                        warehouse, site or home in Rwanda.
+                    <span data-i18n="freight.03" class="section-badge">Trucking &amp; Logistics</span>
+                    <h2 data-i18n="freight.04" class="section-title mt-3 mb-3">Full Logistics: <span class="gradient-text">Local, Africa &amp; Worldwide</span></h2>
+                    <p data-i18n="freight.05" class="about-text mb-3">
+                        Trucking and logistics are at the heart of what we do. We move goods of every kind,
+                        including containers, building materials, stock, machinery and household goods, within
+                        Rwanda, across Africa and from Europe, Asia and the USA, with experienced drivers and
+                        every load tracked.
                     </p>
+                    <h6 class="route-title" data-i18n="freight.30">We ship from</h6>
+                    <div class="route-chips route-chips-world">
+                        <span data-i18n="freight.31"><i class="bi bi-geo-alt"></i> Rwanda (local)</span>
+                        <span data-i18n="freight.32"><i class="bi bi-globe-europe-africa"></i> Africa</span>
+                        <span data-i18n="freight.33"><i class="bi bi-globe-europe-africa"></i> Europe</span>
+                        <span data-i18n="freight.34"><i class="bi bi-globe-asia-australia"></i> Asia (China, India, UAE)</span>
+                        <span data-i18n="freight.35"><i class="bi bi-globe-americas"></i> USA</span>
+                    </div>
+                    <h6 class="route-title" data-i18n="freight.36">Trucking routes</h6>
+                    <div class="route-chips">
+                        <span data-i18n="freight.06"><i class="bi bi-arrow-left-right"></i> Kigali &ndash; Mombasa</span>
+                        <span data-i18n="freight.07"><i class="bi bi-arrow-left-right"></i> Kigali &ndash; Dar es Salaam</span>
+                        <span data-i18n="freight.08"><i class="bi bi-arrow-left-right"></i> Kigali &ndash; Kampala</span>
+                        <span data-i18n="freight.09"><i class="bi bi-arrow-left-right"></i> Kigali &ndash; Goma / Bukavu</span>
+                        <span data-i18n="freight.10"><i class="bi bi-arrow-left-right"></i> Kigali &ndash; Bujumbura</span>
+                        <span data-i18n="freight.11"><i class="bi bi-geo-alt"></i> All provinces of Rwanda</span>
+                    </div>
+                    <h6 data-i18n="freight.12" class="route-title">Importing to Rwanda, step by step</h6>
                     <ol class="route-steps">
                         <li>
                             <span class="route-dot"><i class="bi bi-box-seam"></i></span>
-                            <div><h5>Collection in Europe</h5><p>Pickup from suppliers or the ports of Antwerp, Rotterdam and Hamburg.</p></div>
+                            <div><h5 data-i18n="freight.13">Collection Worldwide</h5><p data-i18n="freight.14">Pickup from suppliers and ports in Europe, Asia, the USA and across Africa.</p></div>
                         </li>
                         <li>
                             <span class="route-dot"><i class="bi bi-water"></i></span>
-                            <div><h5>Ocean Freight to East Africa</h5><p>FCL or groupage shipping to Mombasa (Kenya) or Dar es Salaam (Tanzania).</p></div>
+                            <div><h5 data-i18n="freight.15">Sea or Air Freight</h5><p data-i18n="freight.16">Sea freight (full container or groupage) to Mombasa or Dar es Salaam, or air freight straight to Kigali International Airport.</p></div>
                         </li>
                         <li>
                             <span class="route-dot"><i class="bi bi-truck"></i></span>
-                            <div><h5>Road Transit by Truck</h5><p>Northern Corridor via Nairobi and Kampala, or Central Corridor via Rusumo, with the cargo tracked all the way.</p></div>
+                            <div><h5 data-i18n="freight.17">Road Transit by Truck</h5><p data-i18n="freight.18">Northern Corridor via Nairobi and Kampala, or Central Corridor via Rusumo, with the cargo tracked all the way.</p></div>
                         </li>
                         <li>
                             <span class="route-dot"><i class="bi bi-house-check"></i></span>
-                            <div><h5>Clearance &amp; Delivery in Rwanda</h5><p>Customs coordination in Kigali and final delivery to your door.</p></div>
+                            <div><h5 data-i18n="freight.19">Clearance &amp; Delivery in Rwanda</h5><p data-i18n="freight.20">Customs coordination in Kigali and final delivery to your door.</p></div>
                         </li>
                     </ol>
                     <div class="d-flex flex-wrap gap-3 mt-4">
-                        <a href="#book" class="btn btn-accent btn-lg" data-book="Europe to Rwanda Freight"><i class="bi bi-truck me-2"></i>Get a Freight Quote</a>
-                        <a href="https://wa.me/250788351489?text=Hello%2C%20I%20need%20a%20quote%20for%20cargo%20from%20Europe%20to%20Rwanda." target="_blank" rel="noopener" class="btn btn-outline-brand btn-lg"><i class="bi bi-whatsapp me-2"></i>Talk to Our Cargo Desk</a>
+                        <a data-i18n="freight.21" href="#book" class="btn btn-accent btn-lg" data-book="Local Truck Transport (Rwanda)"><i class="bi bi-truck me-2"></i>Get a Logistics Quote</a>
+                        <a data-i18n="freight.22" href="https://wa.me/250788351489?text=Hello%2C%20I%20need%20a%20trucking%20quote." target="_blank" rel="noopener" class="btn btn-outline-brand btn-lg"><i class="bi bi-whatsapp me-2"></i>Talk to Our Cargo Desk</a>
                     </div>
                 </div>
             </div>
@@ -507,11 +584,11 @@
         <div class="container">
             <div class="row align-items-end mb-5 g-3">
                 <div class="col-lg-7" data-aos="fade-up">
-                    <span class="section-badge">Explore Rwanda</span>
-                    <h2 class="section-title mt-3 mb-0">Popular Tours <span class="gradient-text">From Kigali</span></h2>
+                    <span data-i18n="destinations.01" class="section-badge">Explore Rwanda</span>
+                    <h2 data-i18n="destinations.02" class="section-title mt-3 mb-0">Popular Tours <span class="gradient-text">From Kigali</span></h2>
                 </div>
                 <div class="col-lg-5" data-aos="fade-up">
-                    <p class="section-description text-lg-end mb-0 ms-lg-auto">
+                    <p data-i18n="destinations.03" class="section-description text-lg-end mb-0 ms-lg-auto">
                         Road trips with a professional driver-guide, comfortable vehicles and every stop planned.
                     </p>
                 </div>
@@ -521,45 +598,45 @@
                 <a href="#book" class="dest-card dest-lg" data-book="Local and International Tours" data-dest="Volcanoes National Park" data-aos="fade-up">
                     <img src="images/rw-gorilla.jpg" alt="Mountain gorilla in Volcanoes National Park, Rwanda" loading="lazy">
                     <div class="dest-body">
-                        <span class="dest-tag"><i class="bi bi-clock"></i> ~2.5 hrs from Kigali</span>
-                        <h3>Volcanoes National Park</h3>
-                        <p>Gorilla &amp; golden monkey trekking in Musanze</p>
+                        <span data-i18n="destinations.04" class="dest-tag"><i class="bi bi-clock"></i> ~2.5 hrs from Kigali</span>
+                        <h3 data-i18n="destinations.05">Volcanoes National Park</h3>
+                        <p data-i18n="destinations.06">Gorilla &amp; golden monkey trekking in Musanze</p>
                     </div>
                 </a>
                 <a href="#book" class="dest-card" data-book="Local and International Tours" data-dest="Akagera National Park" data-aos="fade-up" data-aos-delay="100">
                     <img src="images/rw-akagera.jpg" alt="Giraffes in Akagera National Park, Rwanda" loading="lazy">
                     <div class="dest-body">
-                        <span class="dest-tag"><i class="bi bi-clock"></i> ~2.5 hrs</span>
-                        <h3>Akagera Safari</h3>
-                        <p>Big Five game drives</p>
+                        <span data-i18n="destinations.07" class="dest-tag"><i class="bi bi-clock"></i> ~2.5 hrs</span>
+                        <h3 data-i18n="destinations.08">Akagera Safari</h3>
+                        <p data-i18n="destinations.09">Big Five game drives</p>
                     </div>
                 </a>
                 <a href="#book" class="dest-card" data-book="Local and International Tours" data-dest="Nyungwe Forest" data-aos="fade-up" data-aos-delay="150">
                     <img src="images/rw-nyungwe.jpg" alt="Canopy walkway in Nyungwe Forest, Rwanda" loading="lazy">
                     <div class="dest-body">
-                        <span class="dest-tag"><i class="bi bi-clock"></i> ~5 hrs</span>
-                        <h3>Nyungwe Forest</h3>
-                        <p>Canopy walk &amp; chimpanzees</p>
+                        <span data-i18n="destinations.10" class="dest-tag"><i class="bi bi-clock"></i> ~5 hrs</span>
+                        <h3 data-i18n="destinations.11">Nyungwe Forest</h3>
+                        <p data-i18n="destinations.12">Canopy walk &amp; chimpanzees</p>
                     </div>
                 </a>
                 <a href="#book" class="dest-card" data-book="Holiday Packages" data-dest="Lake Kivu (Rubavu)" data-aos="fade-up" data-aos-delay="200">
                     <img src="images/rw-kivu.jpg" alt="Lake Kivu shoreline at Gisenyi, Rwanda" loading="lazy">
                     <div class="dest-body">
-                        <span class="dest-tag"><i class="bi bi-clock"></i> ~3 hrs</span>
-                        <h3>Lake Kivu</h3>
-                        <p>Beach getaways in Rubavu</p>
+                        <span data-i18n="destinations.13" class="dest-tag"><i class="bi bi-clock"></i> ~3 hrs</span>
+                        <h3 data-i18n="destinations.14">Lake Kivu</h3>
+                        <p data-i18n="destinations.15">Beach getaways in Rubavu</p>
                     </div>
                 </a>
                 <a href="#book" class="dest-card" data-book="Tourism & Excursion Services" data-dest="Kigali City Tour" data-aos="fade-up" data-aos-delay="250">
                     <img src="images/rw-kigali-night.jpg" alt="Kigali city skyline at dusk" loading="lazy">
                     <div class="dest-body">
-                        <span class="dest-tag"><i class="bi bi-clock"></i> Half / full day</span>
-                        <h3>Kigali City Tour</h3>
-                        <p>Culture, markets &amp; landmarks</p>
+                        <span data-i18n="destinations.16" class="dest-tag"><i class="bi bi-clock"></i> Half / full day</span>
+                        <h3 data-i18n="destinations.17">Kigali City Tour</h3>
+                        <p data-i18n="destinations.18">Culture, markets &amp; landmarks</p>
                     </div>
                 </a>
             </div>
-            <p class="dest-footnote">Drive times are approximate and depend on traffic and road conditions.</p>
+            <p data-i18n="destinations.19" class="dest-footnote">Drive times are approximate and depend on traffic and road conditions.</p>
         </div>
     </section>
 
@@ -573,21 +650,21 @@
                         <div class="about-experience-badge">
                             <div class="badge-icon"><i class="bi bi-award"></i></div>
                             <div class="badge-content">
-                                <h3>15+</h3>
-                                <p>Years of Excellence</p>
+                                <h3>8+</h3>
+                                <p data-i18n="about.01">Years of Experience<br>(since 2018)</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
-                    <span class="section-badge">About Us</span>
-                    <h2 class="section-title mt-3 mb-4">Your Trusted <span class="gradient-text">Travel &amp; Mobility Partner</span> in Rwanda</h2>
-                    <p class="about-text mb-3">
+                    <span data-i18n="about.02" class="section-badge">About Us</span>
+                    <h2 data-i18n="about.03" class="section-title mt-3 mb-4">Your Trusted <span class="gradient-text">Travel &amp; Mobility Partner</span> in Rwanda</h2>
+                    <p data-i18n="about.04" class="about-text mb-3">
                         J&amp;F Smart Logistics Ltd is a Kigali-based provider of mobility, travel and tourism
                         services. We move executives, delegations, hotel guests and holidaymakers with
                         comfort, reliability and care.
                     </p>
-                    <p class="about-text mb-4">
+                    <p data-i18n="about.05" class="about-text mb-4">
                         From conference transport at the Kigali Convention Centre to gorilla treks in the
                         Virunga volcanoes, our team plans every route, checks every vehicle and stays
                         with you throughout the journey.
@@ -596,25 +673,25 @@
                         <div class="col-sm-6">
                             <div class="about-feature">
                                 <div class="feature-icon"><i class="bi bi-headset"></i></div>
-                                <div class="feature-content"><h5>24/7 Support</h5><p>Round-the-clock customer service</p></div>
+                                <div class="feature-content"><h5 data-i18n="about.06">24/7 Support</h5><p data-i18n="about.07">Round-the-clock customer service</p></div>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="about-feature">
                                 <div class="feature-icon"><i class="bi bi-geo-alt"></i></div>
-                                <div class="feature-content"><h5>Live Tracking</h5><p>Real-time trip &amp; fleet tracking</p></div>
+                                <div class="feature-content"><h5 data-i18n="about.08">Live Tracking</h5><p data-i18n="about.09">Real-time trip &amp; fleet tracking</p></div>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="about-feature">
                                 <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
-                                <div class="feature-content"><h5>Secure &amp; Safe</h5><p>Full insurance coverage</p></div>
+                                <div class="feature-content"><h5 data-i18n="about.10">Secure &amp; Safe</h5><p data-i18n="about.11">Full insurance coverage</p></div>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="about-feature">
                                 <div class="feature-icon"><i class="bi bi-stars"></i></div>
-                                <div class="feature-content"><h5>Comfort &amp; Class</h5><p>Premium, well-maintained fleet</p></div>
+                                <div class="feature-content"><h5 data-i18n="about.12">Comfort &amp; Class</h5><p data-i18n="about.13">Premium, well-maintained fleet</p></div>
                             </div>
                         </div>
                     </div>
@@ -629,51 +706,51 @@
         <div class="container position-relative">
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center" data-aos="fade-up">
-                    <span class="section-badge badge-light">Why Choose Us</span>
-                    <h2 class="section-title mt-3 mb-3 text-white">What Makes Us <span class="text-accent">Different</span></h2>
-                    <p class="section-description text-white-75">Local knowledge, disciplined operations and service that looks after every passenger.</p>
+                    <span data-i18n="benefits.01" class="section-badge badge-light">Why Choose Us</span>
+                    <h2 data-i18n="benefits.02" class="section-title mt-3 mb-3 text-white">What Makes Us <span class="text-accent">Different</span></h2>
+                    <p data-i18n="benefits.03" class="section-description text-white-75">Local knowledge, disciplined operations and service that looks after every passenger.</p>
                 </div>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="0">
                     <div class="why-card">
                         <i class="bi bi-speedometer2"></i>
-                        <h4>Fast &amp; Efficient</h4>
-                        <p>Planned routes and punctual chauffeurs get you there on time, every time.</p>
+                        <h4 data-i18n="benefits.04">Fast &amp; Efficient</h4>
+                        <p data-i18n="benefits.05">Planned routes and punctual chauffeurs get you there on time, every time.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="why-card">
                         <i class="bi bi-shield-lock"></i>
-                        <h4>Secure &amp; Safe</h4>
-                        <p>Vetted drivers, well-maintained vehicles and full insurance for peace of mind.</p>
+                        <h4 data-i18n="benefits.06">Secure &amp; Safe</h4>
+                        <p data-i18n="benefits.07">Vetted drivers, well-maintained vehicles and full insurance for peace of mind.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="why-card">
                         <i class="bi bi-compass"></i>
-                        <h4>Local Expertise</h4>
-                        <p>We know Rwanda's roads, parks and venues, plus a network across 50+ destinations.</p>
+                        <h4 data-i18n="benefits.08">Local Expertise</h4>
+                        <p data-i18n="benefits.09">We know Rwanda's roads, borders, parks and venues, plus a network across 50+ destinations.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="why-card">
                         <i class="bi bi-cpu"></i>
-                        <h4>Smart Technology</h4>
-                        <p>Digital booking and live tracking give you full visibility of every trip.</p>
+                        <h4 data-i18n="benefits.10">Smart Technology</h4>
+                        <p data-i18n="benefits.11">Digital booking and live tracking give you full visibility of every trip.</p>
                     </div>
                 </div>
             </div>
 
             <div class="sectors" data-aos="fade-up">
-                <span class="sectors-title">We serve</span>
-                <span><i class="bi bi-building"></i> Corporates</span>
-                <span><i class="bi bi-house-heart"></i> Hotels &amp; Resorts</span>
-                <span><i class="bi bi-flag"></i> Embassies &amp; NGOs</span>
-                <span><i class="bi bi-mic"></i> Conferences &amp; Events</span>
-                <span><i class="bi bi-backpack"></i> Tour Operators</span>
-                <span><i class="bi bi-box-seam"></i> Importers &amp; Traders</span>
-                <span><i class="bi bi-person-heart"></i> Private Travellers</span>
+                <span data-i18n="benefits.12" class="sectors-title">We serve</span>
+                <span data-i18n="benefits.13"><i class="bi bi-building"></i> Corporates</span>
+                <span data-i18n="benefits.14"><i class="bi bi-house-heart"></i> Hotels &amp; Resorts</span>
+                <span data-i18n="benefits.15"><i class="bi bi-flag"></i> Embassies &amp; NGOs</span>
+                <span data-i18n="benefits.16"><i class="bi bi-mic"></i> Conferences &amp; Events</span>
+                <span data-i18n="benefits.17"><i class="bi bi-backpack"></i> Tour Operators</span>
+                <span data-i18n="benefits.18"><i class="bi bi-box-seam"></i> Importers &amp; Traders</span>
+                <span data-i18n="benefits.19"><i class="bi bi-person-heart"></i> Private Travellers</span>
             </div>
         </div>
     </section>
@@ -683,9 +760,9 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center" data-aos="fade-up">
-                    <span class="section-badge">Our Team</span>
-                    <h2 class="section-title mt-3 mb-4">Meet the People <span class="gradient-text">Driving Us Forward</span></h2>
-                    <p class="section-description">A dedicated leadership team committed to delivering excellence on every journey.</p>
+                    <span data-i18n="team.01" class="section-badge">Our Team</span>
+                    <h2 data-i18n="team.02" class="section-title mt-3 mb-4">Meet the People <span class="gradient-text">Driving Us Forward</span></h2>
+                    <p data-i18n="team.03" class="section-description">A dedicated leadership team committed to delivering excellence on every journey.</p>
                 </div>
             </div>
 
@@ -695,12 +772,12 @@
                     <div class="team-card featured text-center h-100">
                         <div class="team-avatar"><img src="images/member-md.png" alt="Kamanda Justus"></div>
                         <h4 class="team-name">Kamanda Justus</h4>
-                        <span class="team-role">Managing Director (MD)</span>
+                        <span data-i18n="team.04" class="team-role">Managing Director (MD)</span>
                         <div class="team-social">
                             <a href="#"><i class="bi bi-linkedin"></i></a>
                             <a href="mailto:info@jfsmartlogistics.com"><i class="bi bi-envelope-fill"></i></a>
                         </div>
-                        <a href="team-member.html?id=md" class="btn btn-primary-custom btn-sm mt-3"><i class="bi bi-person-lines-fill me-2"></i>View Profile</a>
+                        <a data-i18n="team.05" href="team-member.html?id=md" class="btn btn-primary-custom btn-sm mt-3"><i class="bi bi-person-lines-fill me-2"></i>View Profile</a>
                     </div>
                 </div>
             </div>
@@ -711,24 +788,24 @@
                     <div class="team-card text-center h-100">
                         <div class="team-avatar"><img src="images/member-cto.png" alt="Bazimya Saphani"></div>
                         <h4 class="team-name">Bazimya Saphani</h4>
-                        <span class="team-role">Director OF IT</span>
+                        <span data-i18n="team.06" class="team-role">Director OF IT</span>
                         <div class="team-social">
                             <a href="#"><i class="bi bi-linkedin"></i></a>
                             <a href="mailto:info@jfsmartlogistics.com"><i class="bi bi-envelope-fill"></i></a>
                         </div>
-                        <a href="team-member.html?id=cto" class="btn btn-primary-custom btn-sm mt-3"><i class="bi bi-person-lines-fill me-2"></i>View Profile</a>
+                        <a data-i18n="team.07" href="team-member.html?id=cto" class="btn btn-primary-custom btn-sm mt-3"><i class="bi bi-person-lines-fill me-2"></i>View Profile</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="team-card text-center h-100">
                         <div class="team-avatar"><img src="images/member-daf.png" alt="Sumwiza Faith"></div>
                         <h4 class="team-name">Sumwiza Faith</h4>
-                        <span class="team-role">Director of Admin &amp; Finance (DAF)</span>
+                        <span data-i18n="team.08" class="team-role">Director of Admin &amp; Finance (DAF)</span>
                         <div class="team-social">
                             <a href="#"><i class="bi bi-linkedin"></i></a>
                             <a href="mailto:info@jfsmartlogistics.com"><i class="bi bi-envelope-fill"></i></a>
                         </div>
-                        <a href="team-member.html?id=daf" class="btn btn-primary-custom btn-sm mt-3"><i class="bi bi-person-lines-fill me-2"></i>View Profile</a>
+                        <a data-i18n="team.09" href="team-member.html?id=daf" class="btn btn-primary-custom btn-sm mt-3"><i class="bi bi-person-lines-fill me-2"></i>View Profile</a>
                     </div>
                 </div>
             </div>
@@ -739,24 +816,24 @@
                     <div class="team-card text-center h-100">
                         <div class="team-avatar"><img src="images/member-ops.png" alt="Mucyo Joas"></div>
                         <h4 class="team-name">Mucyo Joas</h4>
-                        <span class="team-role">Operations Manager</span>
+                        <span data-i18n="team.10" class="team-role">Operations Manager</span>
                         <div class="team-social">
                             <a href="#"><i class="bi bi-linkedin"></i></a>
                             <a href="mailto:info@jfsmartlogistics.com"><i class="bi bi-envelope-fill"></i></a>
                         </div>
-                        <a href="team-member.html?id=ops" class="btn btn-primary-custom btn-sm mt-3"><i class="bi bi-person-lines-fill me-2"></i>View Profile</a>
+                        <a data-i18n="team.11" href="team-member.html?id=ops" class="btn btn-primary-custom btn-sm mt-3"><i class="bi bi-person-lines-fill me-2"></i>View Profile</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="team-card text-center h-100">
                         <div class="team-avatar"><img src="images/member-fleet.png" alt="Karuhanga Josam"></div>
                         <h4 class="team-name">Karuhanga Josam</h4>
-                        <span class="team-role">Fleet Manager</span>
+                        <span data-i18n="team.12" class="team-role">Fleet Manager</span>
                         <div class="team-social">
                             <a href="#"><i class="bi bi-linkedin"></i></a>
                             <a href="mailto:info@jfsmartlogistics.com"><i class="bi bi-envelope-fill"></i></a>
                         </div>
-                        <a href="team-member.html?id=fleet" class="btn btn-primary-custom btn-sm mt-3"><i class="bi bi-person-lines-fill me-2"></i>View Profile</a>
+                        <a data-i18n="team.13" href="team-member.html?id=fleet" class="btn btn-primary-custom btn-sm mt-3"><i class="bi bi-person-lines-fill me-2"></i>View Profile</a>
                     </div>
                 </div>
             </div>
@@ -769,12 +846,12 @@
         <div class="container position-relative">
             <div class="row align-items-center g-4">
                 <div class="col-lg-8" data-aos="fade-right">
-                    <h2>Landing in Kigali soon? <span class="text-accent">Your ride is one message away.</span></h2>
-                    <p>Send your flight number and we'll handle the rest: pickup, luggage and the drive to your door.</p>
+                    <h2 data-i18n="cta.01">Landing in Kigali soon? <span class="text-accent">Your ride is one message away.</span></h2>
+                    <p data-i18n="cta.02">Send your flight number and we'll handle the rest: pickup, luggage and the drive to your door.</p>
                 </div>
                 <div class="col-lg-4 d-flex flex-wrap gap-3 justify-content-lg-end" data-aos="fade-left">
-                    <a href="https://wa.me/250788351489" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg"><i class="bi bi-whatsapp me-2"></i>WhatsApp</a>
-                    <a href="tel:+250788351489" class="btn btn-ghost btn-lg"><i class="bi bi-telephone me-2"></i>Call Us</a>
+                    <a data-i18n="cta.03" href="https://wa.me/250788351489" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg"><i class="bi bi-whatsapp me-2"></i>WhatsApp</a>
+                    <a data-i18n="cta.04" href="tel:+250788351489" class="btn btn-ghost btn-lg"><i class="bi bi-telephone me-2"></i>Call Us</a>
                 </div>
             </div>
         </div>
@@ -785,9 +862,9 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center" data-aos="fade-up">
-                    <span class="section-badge">Get In Touch</span>
-                    <h2 class="section-title mt-3 mb-4">Let's Start Your <span class="gradient-text">Journey</span></h2>
-                    <p class="section-description">
+                    <span data-i18n="contact.01" class="section-badge">Get In Touch</span>
+                    <h2 data-i18n="contact.02" class="section-title mt-3 mb-4">Let's Start Your <span class="gradient-text">Journey</span></h2>
+                    <p data-i18n="contact.03" class="section-description">
                         Visit our office in Kigali, call us or chat on WhatsApp. We'll answer
                         questions and help you plan the trip.
                     </p>
@@ -800,32 +877,32 @@
                         <div class="contact-item">
                             <div class="contact-item-icon"><i class="bi bi-telephone"></i></div>
                             <div class="contact-item-content">
-                                <h5>Phone</h5>
+                                <h5 data-i18n="contact.04">Phone</h5>
                                 <p><a href="tel:+250788351489" id="phoneNumber">+250 788 351 489</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-item-icon"><i class="bi bi-envelope"></i></div>
                             <div class="contact-item-content">
-                                <h5>Email</h5>
+                                <h5 data-i18n="contact.05">Email</h5>
                                 <p><a href="mailto:jfsmart.logisticsltd@gmail.com">jfsmart.logisticsltd@gmail.com</a><br><a href="mailto:info@jfsmartlogistics.com">info@jfsmartlogistics.com</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-item-icon"><i class="bi bi-geo-alt"></i></div>
                             <div class="contact-item-content">
-                                <h5>Address</h5>
-                                <p>Charity House, Ground Floor<br>Opp. Ste Famille Church, Kigali</p>
+                                <h5 data-i18n="contact.06">Address</h5>
+                                <p data-i18n="contact.07">Charity House, Ground Floor<br>Opp. Ste Famille Church, Kigali</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-item-icon"><i class="bi bi-clock"></i></div>
                             <div class="contact-item-content">
-                                <h5>Office Hours</h5>
-                                <p>Mon - Fri: 9:00 AM - 5:00 PM<br>Sat: 9:00 AM - 1:00 PM</p>
+                                <h5 data-i18n="contact.08">Office Hours</h5>
+                                <p data-i18n="contact.09">Mon - Fri: 9:00 AM - 5:00 PM<br>Sat: 9:00 AM - 1:00 PM</p>
                             </div>
                         </div>
-                        <a href="https://wa.me/250788351489" target="_blank" rel="noopener" class="btn btn-whatsapp w-100 mt-2 py-3">
+                        <a data-i18n="contact.10" href="https://wa.me/250788351489" target="_blank" rel="noopener" class="btn btn-whatsapp w-100 mt-2 py-3">
                             <i class="bi bi-whatsapp me-2"></i> Chat with us on WhatsApp
                         </a>
                     </div>
@@ -850,7 +927,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-brand mb-4">
                         <img src="images/logo.png" alt="J&F Smart Logistics Ltd" class="footer-logo mb-3" id="footerLogo">
-                        <p class="footer-text">
+                        <p data-i18n="footer.01" class="footer-text">
                             Mobility, travel, tourism and cargo logistics from Kigali. Comfort, class
                             and care on every journey across Rwanda and beyond.
                         </p>
@@ -863,48 +940,49 @@
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
-                    <h5 class="footer-title mb-4">Mobility &amp; Travel</h5>
+                    <h5 data-i18n="footer.02" class="footer-title mb-4">Mobility &amp; Travel</h5>
                     <ul class="footer-links">
-                        <li><a href="#services">Airport Transfers</a></li>
-                        <li><a href="#services">Executive Chauffeur Services</a></li>
-                        <li><a href="#services">Corporate Transport Solutions</a></li>
-                        <li><a href="#services">Hotel Transfers</a></li>
-                        <li><a href="#services">VIP Transportation Services</a></li>
+                        <li><a data-i18n="footer.03" href="#services">Airport Transfers</a></li>
+                        <li><a data-i18n="footer.04" href="#services">Executive Chauffeur Services</a></li>
+                        <li><a data-i18n="footer.05" href="#services">Corporate Transport Solutions</a></li>
+                        <li><a data-i18n="footer.06" href="#services">Hotel Transfers</a></li>
+                        <li><a data-i18n="footer.07" href="#services">VIP Transportation Services</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6">
-                    <h5 class="footer-title mb-4">Travel &amp; Tourism</h5>
+                    <h5 data-i18n="footer.08" class="footer-title mb-4">Travel &amp; Tourism</h5>
                     <ul class="footer-links">
-                        <li><a href="#services">Travel Planning &amp; Coordination</a></li>
-                        <li><a href="#services">Local and International Tours</a></li>
-                        <li><a href="#services">Holiday Packages</a></li>
-                        <li><a href="#services">Business Travel Management</a></li>
-                        <li><a href="#services">Tourism &amp; Excursion Services</a></li>
+                        <li><a data-i18n="footer.09" href="#services">Travel Planning &amp; Coordination</a></li>
+                        <li><a data-i18n="footer.10" href="#services">Local and International Tours</a></li>
+                        <li><a data-i18n="footer.11" href="#services">Holiday Packages</a></li>
+                        <li><a data-i18n="footer.12" href="#services">Business Travel Management</a></li>
+                        <li><a data-i18n="footer.13" href="#services">Tourism &amp; Excursion Services</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6">
-                    <h5 class="footer-title mb-4">Cargo &amp; Freight</h5>
+                    <h5 data-i18n="footer.14" class="footer-title mb-4">Trucking &amp; Logistics</h5>
                     <ul class="footer-links">
-                        <li><a href="#freight">Europe to Rwanda</a></li>
-                        <li><a href="#freight">Truck Transport</a></li>
-                        <li><a href="#freight">Port-to-Kigali Haulage</a></li>
-                        <li><a href="#freight">Heavy Cargo</a></li>
+                        <li><a data-i18n="footer.15" href="#freight">Local Truck Transport</a></li>
+                        <li><a data-i18n="footer.16" href="#freight">Africa &amp; Regional Trucking</a></li>
+                        <li><a data-i18n="footer.17" href="#freight">International Freight</a></li>
+                        <li><a data-i18n="footer.18" href="#freight">Port-to-Kigali Haulage</a></li>
+                        <li><a data-i18n="footer.19" href="#freight">Heavy &amp; Project Cargo</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="footer-title mb-4">Company</h5>
+                    <h5 data-i18n="footer.20" class="footer-title mb-4">Company</h5>
                     <ul class="footer-links">
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="corporate.html">Enterprise</a></li>
-                        <li><a href="insights.html">Insights</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a data-i18n="footer.21" href="#about">About Us</a></li>
+                        <li><a data-i18n="footer.22" href="#team">Team</a></li>
+                        <li><a data-i18n="footer.23" href="corporate.html">Enterprise</a></li>
+                        <li><a data-i18n="footer.24" href="insights.html">Insights</a></li>
+                        <li><a data-i18n="footer.25" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom pt-4">
                 <div class="d-flex flex-column flex-md-row justify-content-between gap-2">
-                    <p class="mb-0">&copy; 2026 J&amp;F Smart Logistics Ltd. All rights reserved.</p>
+                    <p data-i18n="footer.26" class="mb-0">&copy; 2026 J&amp;F Smart Logistics Ltd. All rights reserved.</p>
                     <p class="mb-0"><a href="tel:+250788351489">+250 788 351 489</a> &middot; <a href="mailto:info@jfsmartlogistics.com">info@jfsmartlogistics.com</a></p>
                 </div>
                 <details class="photo-credits">
@@ -912,7 +990,8 @@
                     <p>
                         Photos via Wikimedia Commons:
                         Kigali street, Kigali Convention Centre &amp; mountain gorilla by Emmanuel Kwizera (CC BY-SA 4.0);
-                        Kigali airport &amp; Ruhengeri&ndash;Kigali road by Dave Proffer (CC BY 2.0);
+                        Ruhengeri&ndash;Kigali road by Dave Proffer (CC BY 2.0);
+                        Kigali Business Centre by Nikiwatanze (CC BY-SA 4.0);
                         Kigali skyline by Adrien K (CC BY 2.0);
                         Volcanoes National Park by Nina R (CC BY 2.0);
                         Akagera giraffes by Alex Shema (CC BY-SA 4.0);
@@ -937,7 +1016,8 @@
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Custom JS -->
+    <!-- Translations + Custom JS -->
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

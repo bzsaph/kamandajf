@@ -25,8 +25,9 @@ const SERVICES = {
         'Tourism & Excursion Services'
     ],
     freight: [
-        'Europe to Rwanda Freight',
-        'Truck Transport (FTL & LTL)',
+        'Local Truck Transport (Rwanda)',
+        'Africa & Regional Trucking',
+        'International Freight (Europe, Asia, USA)',
         'Port-to-Kigali Haulage',
         'Customs & Documentation Support',
         'Heavy, Project & Vehicle Cargo'
@@ -36,8 +37,12 @@ const SERVICES = {
 const BOOKING_LABELS = {
     mobility: { from: 'Pickup location', to: 'Drop-off', fromPh: "e.g. Kigali Int'l Airport", toPh: 'e.g. Kigali Marriott', date: 'Date', qty: 'Passengers', qtyKey: 'Passengers' },
     tourism: { from: 'Starting from', to: 'Destination', fromPh: 'e.g. Kigali', toPh: 'e.g. Volcanoes National Park', date: 'Date', qty: 'Travellers', qtyKey: 'Travellers' },
-    freight: { from: 'Origin (city, country)', to: 'Delivery in Rwanda', fromPh: 'e.g. Hamburg, Germany', toPh: 'e.g. Kigali', date: 'Cargo ready date', qty: 'Containers / trucks', qtyKey: 'Containers/Trucks' }
+    freight: { from: 'Loading point', to: 'Delivery point', fromPh: 'e.g. Kigali, Shanghai or Hamburg', toPh: 'e.g. Musanze', date: 'Cargo ready date', qty: 'Containers / trucks', qtyKey: 'Containers/Trucks' }
 };
+
+// Translate a UI string (see i18n.js); falls back to English
+const tr = s => (window.I18N ? I18N.t(s) : s);
+const LANG_NAMES = { en: 'English', fr: 'French', rw: 'Kinyarwanda' };
 
 document.addEventListener('DOMContentLoaded', function () {
     if (window.AOS) {
@@ -49,7 +54,18 @@ document.addEventListener('DOMContentLoaded', function () {
     initBooking();
     initCounters();
     initWhatsAppButton();
+    initCoreCards();
 });
+
+// === Core service cards open the matching services tab ===
+function initCoreCards() {
+    document.querySelectorAll('.core-card[data-tab]').forEach(card => {
+        card.addEventListener('click', () => {
+            const trigger = document.querySelector(`.service-switch [data-bs-target="${card.dataset.tab}"]`);
+            if (trigger) bootstrap.Tab.getOrCreateInstance(trigger).show();
+        });
+    });
+}
 
 // === Header: shrink on scroll + active link ===
 function initHeader() {
@@ -124,21 +140,25 @@ function initBooking() {
     let currentMode = 'mobility';
     const setMode = (mode, preselect) => {
         tabs.forEach(t => t.classList.toggle('active', t.dataset.mode === mode));
-        select.innerHTML = SERVICES[mode].map(s => `<option>${s}</option>`).join('');
+        select.innerHTML = SERVICES[mode].map(s => `<option value="${s}">${tr(s)}</option>`).join('');
         if (preselect) select.value = preselect;
 
         const labels = BOOKING_LABELS[mode];
-        document.getElementById('bkFromLabel').textContent = labels.from;
-        document.getElementById('bkToLabel').textContent = labels.to;
-        document.getElementById('bkFrom').placeholder = labels.fromPh;
-        document.getElementById('bkTo').placeholder = labels.toPh;
-        document.getElementById('bkPaxLabel').textContent = labels.qty;
-        document.querySelector('label[for="bkDate"]').textContent = labels.date;
+        document.getElementById('bkFromLabel').textContent = tr(labels.from);
+        document.getElementById('bkToLabel').textContent = tr(labels.to);
+        document.getElementById('bkFrom').placeholder = tr(labels.fromPh);
+        document.getElementById('bkTo').placeholder = tr(labels.toPh);
+        document.getElementById('bkPaxLabel').textContent = tr(labels.qty);
+        document.querySelector('label[for="bkDate"]').textContent = tr(labels.date);
+        document.getElementById('bkName').placeholder = tr('Full name');
         currentMode = mode;
     };
 
     tabs.forEach(tab => tab.addEventListener('click', () => setMode(tab.dataset.mode)));
     setMode('mobility');
+
+    // Re-render labels and service names when the language changes
+    document.addEventListener('langchange', () => setMode(currentMode, select.value));
 
     // Any "Book" link with data-book preselects the matching service
     document.querySelectorAll('[data-book]').forEach(link => {
@@ -161,7 +181,7 @@ function initBooking() {
             if (!ok) valid = false;
         });
         if (!valid) {
-            showNotification('Please fill in all fields.', 'warning');
+            showNotification(tr('Please fill in all fields.'), 'warning');
             return;
         }
 
@@ -174,11 +194,12 @@ function initBooking() {
             `*To:* ${val('bkTo')}`,
             `*${BOOKING_LABELS[currentMode].date}:* ${val('bkDate')}`,
             `*${BOOKING_LABELS[currentMode].qtyKey}:* ${val('bkPax')}`,
-            `*Name:* ${val('bkName')}`
+            `*Name:* ${val('bkName')}`,
+            `*Language:* ${LANG_NAMES[window.I18N ? I18N.lang : 'en']}`
         ].join('\n');
 
         window.open(`https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
-        showNotification('Opening WhatsApp with your request...', 'success');
+        showNotification(tr('Opening WhatsApp with your request...'), 'success');
     });
 
     form.addEventListener('input', e => e.target.classList.remove('is-invalid'));
