@@ -863,3 +863,39 @@ html[lang="fr"] .hero-rw-title,
 html[lang="rw"] .hero-rw-title { font-size: clamp(2.1rem, 4.2vw, 3.5rem); }
 
 .booking-tabs button { white-space: nowrap; }
+
+/* === Partners === */
+.partners-rw { padding: 4rem 0; background: var(--white); border-bottom: 1px solid var(--gray-200); }
+.partners-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--gray-600);
+    margin-bottom: 1.5rem;
+}
+.partner-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+}
+.partner-tile {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0.75rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 14px;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    color: var(--gray-600);
+    transition: var(--transition);
+}
+.partner-tile:hover { color: var(--navy); border-color: var(--accent); box-shadow: var(--shadow-md); }
+@media (max-width: 1199px) { .partner-row { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 575px) { .partner-row { grid-template-columns: repeat(2, 1fr); } }
