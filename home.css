@@ -858,9 +858,19 @@ body.home { background: var(--white); }
     .home .navbar-nav .nav-link { padding: 0.5rem 0.45rem !important; font-size: 0.85rem; }
     .home .navbar-nav .btn-accent { padding: 0.55rem 0.9rem; font-size: 0.85rem; }
 }
-/* French and Kinyarwanda headlines run longer than English */
+/* French, Spanish and Chinese headlines run longer than English */
 html[lang="fr"] .hero-rw-title,
-html[lang="rw"] .hero-rw-title { font-size: clamp(2.1rem, 4.2vw, 3.5rem); }
+html[lang="es"] .hero-rw-title,
+html[lang="zh-CN"] .hero-rw-title { font-size: clamp(2.1rem, 4.2vw, 3.5rem); }
+
+/* Chinese: use system CJK fonts and drop the tight Latin letter-spacing */
+html[lang="zh-CN"] body,
+html[lang="zh-CN"] h1, html[lang="zh-CN"] h2, html[lang="zh-CN"] h3,
+html[lang="zh-CN"] h4, html[lang="zh-CN"] h5, html[lang="zh-CN"] h6 {
+    font-family: 'Plus Jakarta Sans', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Hiragino Sans GB', sans-serif;
+}
+html[lang="zh-CN"] .hero-rw-title,
+html[lang="zh-CN"] .section-title { letter-spacing: 0; }
 
 .booking-tabs button { white-space: nowrap; }
 
@@ -877,7 +887,7 @@ html[lang="rw"] .hero-rw-title { font-size: clamp(2.1rem, 4.2vw, 3.5rem); }
 }
 .partner-row {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 1rem;
 }
 .partner-tile {

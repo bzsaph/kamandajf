@@ -42,7 +42,7 @@ const BOOKING_LABELS = {
 
 // Translate a UI string (see i18n.js); falls back to English
 const tr = s => (window.I18N ? I18N.t(s) : s);
-const LANG_NAMES = { en: 'English', fr: 'French', rw: 'Kinyarwanda' };
+const LANG_NAMES = { en: 'English', fr: 'French', es: 'Spanish', zh: 'Chinese' };
 
 document.addEventListener('DOMContentLoaded', function () {
     if (window.AOS) {

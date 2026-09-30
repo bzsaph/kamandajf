@@ -212,14 +212,14 @@ For questions about customization:
 Last Updated: February 2026
 # kamandajf
 
-## 🌍 Languages (English / Français / Kinyarwanda)
+## 🌍 Languages (English / Français / Español / 中文)
 
-The homepage supports three languages. Visitors pick one from the **EN / FR / RW** button in the menu, and the choice is remembered.
+The homepage supports four languages. Visitors pick one from the **EN / FR / ES / 中文** button in the menu, and the choice is remembered.
 
 - English text is written directly in `index.html`.
-- French and Kinyarwanda translations live in `i18n.js`. Each text element in `index.html` has a `data-i18n="..."` key, and the matching key in `i18n.js` holds its translation.
+- French, Spanish and Chinese translations live in `i18n.js`. Each text element in `index.html` has a `data-i18n="..."` key, and the matching key in `i18n.js` holds its translation.
 - To fix a translation, search `i18n.js` for the key (or the old text) and edit it.
-- If you add new text to `index.html`, give it a new `data-i18n` key and add that key to both `fr` and `rw` in `i18n.js`. If a translation is missing, the English text is shown.
-- Direct links: `index.html?lang=fr` (French) and `index.html?lang=rw` (Kinyarwanda).
+- If you add new text to `index.html`, give it a new `data-i18n` key and add that key to `fr`, `es` and `zh` in `i18n.js`. If a translation is missing, the English text is shown.
+- Direct links: `index.html?lang=fr` (French), `index.html?lang=es` (Spanish) and `index.html?lang=zh` (Chinese).
 
 Everything runs in the browser, so it works on GitHub Pages without a server or database.
